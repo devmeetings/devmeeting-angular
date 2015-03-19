@@ -1,0 +1,542 @@
+---
+annotations:
+  - 
+    title: "Angular: Extra: Dokumentacja"
+    description: "Jeżeli zaglądałeś na dokumentację to pewnie zauważyłeś notację, o której będziemy mówić już wcześniej.\n\nUżywanie globalnych funkcji nie jest zalecane w żadnych zastosowaniach. Zostało użyte tylko po to, żeby nie wprowadzać wielu pojęć na początku kursu."
+    timestamp: 25
+    type: "snippet"
+  - 
+    timestamp: 25.6
+    description: "Kontroler jest globalną funkcję - w dużych aplikacjach będzie to powodowało sporo problemów."
+    type: "comment"
+  - 
+    timestamp: 29.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 32.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 34.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 39.4
+    description: "Angular pozwala zorganizować kod w postaci **modułów**"
+    type: "comment"
+  - 
+    title: "Angular: Modules"
+    description: "Moduły pozwalają logicznie podzielić aplikację. Potencjalnie moduł powinien być możliwy do re-użycia np. w innym projekcie.\n\n[Czym są moduły?](https://docs.angularjs.org/guide/module)"
+    timestamp: 43
+    type: "snippet"
+  - 
+    timestamp: 45.9
+    description: "Z globalnego obiektu dostajemy możliwość stworzenia modułu ..."
+    type: "comment"
+  - 
+    timestamp: 59.1
+    description: "... reprezentującego całą aplikację - nazwijmy ją `TodoApp`"
+    type: "comment"
+  - 
+    title: "Angular: Extra: Nazewnictwo"
+    description: "W dużych aplikacjach polecane jest prefiksowanie nazw modułów, dyrektyw i kontrolerów używanych w aplikacji w celu uniknięcia konfliktu z innymi bibliotekami lub przyszłymi wersjami AngularJS lub HTML.\n\n[https://docs.angularjs.org/guide/module](Guideline dla nazewnictwa w AngularJS)"
+    timestamp: 61
+    type: "snippet"
+  - 
+    timestamp: 63.6
+    description: "Jako drugi argument podajemy moduły, od których zależy nasza aplikacja."
+    type: "comment"
+  - 
+    timestamp: 74.6
+    description: "Do modułu możemy zarejestrować **kontrolery**."
+    type: "comment"
+  - 
+    timestamp: 89.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 92.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 95.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 99.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 109.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 129.6
+    description: "Aplikacja przestała działać - Angular nie wie, że głównym modułem jest `TodoApp`."
+    type: "comment"
+  - 
+    timestamp: 131
+    title: "ngApp"
+    description: "Przekaż jako argument do `ngApp` nazwę utworzonego modułu."
+    meta: "exists('html[ng-app=\"TodoApp\"]')"
+    type: "task"
+  - 
+    timestamp: 135.6
+    description: "Aplikacja znów działa."
+    type: "comment"
+  - 
+    title: "Inne: ngRepeat"
+    description: "Hmmm.... Nie sądzisz, że można by rozwiązać ten problem wprowadzając `ngRepeat`?"
+    timestamp: 166
+    type: "snippet"
+  - 
+    timestamp: 178.5
+    description: "Widzimy sporo powtarzającego się kodu. Redundancja. **Co z tym robimy?**"
+    type: "comment"
+  - 
+    timestamp: 186
+    title: "ngRepeat"
+    description: "Spróbuj skorzystać z `ngRepeat`, aby nie powielać kodu przycisków sortowania."
+    meta: "exists('[ng-repeat] button[ng-click*=\"sortBy\"]', 2) || exists('button[ng-click*=\"sortBy\"][ng-repeat]', 2)"
+    type: "task"
+  - 
+    timestamp: 201.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 206.6
+    description: "Angular pozwala tworzyć 'własne tagi', które nazywamy **dyrektywami**."
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy"
+    description: "[Dokumentacja dyrektyw](https://docs.angularjs.org/guide/directive)\n\nTak naprawdę z wbudowanych dyrektyw korzystaliśmy już wielokrotnie - każdy atrybut `ng-*` to dyrektywa!\n\nDyrektywy są łącznikiem pomiędzy widokiem i modelem czyli naszym kodem HTMLowym i kontrolerem w JS."
+    timestamp: 208
+    type: "snippet"
+  - 
+    timestamp: 210.4
+    description: "Zacznijmy jednak od tego jak chcielibyśmy używać naszej dyrektywy."
+    type: "comment"
+  - 
+    timestamp: 213.4
+    description: "Chcielibyśmy element o nazwie `sorting-button`"
+    type: "comment"
+  - 
+    timestamp: 226.9
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: restrict"
+    description: "Dyrektywy mogą być używane jak nowe tagi w HTML, atrybuty lub nawet klasy.\n\nSposób użycia dyrektywy definiowany jest w JS w polu `restrict`."
+    timestamp: 227
+    type: "snippet"
+  - 
+    timestamp: 231.9
+    description: "Chcielibyśmy sortować po polu `price`"
+    type: "comment"
+  - 
+    timestamp: 233.9
+    description: "A jako etykietę chcielibyśmy wyświetlić **Price**"
+    type: "comment"
+  - 
+    timestamp: 238.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 240.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 243.6
+    description: "Analogicznie dla `name`"
+    type: "comment"
+  - 
+    timestamp: 243.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 246.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 251.4
+    description: "Wypada teraz to oprogramować :-) **Dyrektywy** pozwolą stworzyć elementy z własną logiką i template'm"
+    type: "comment"
+  - 
+    timestamp: 265.9
+    description: "Stwórzmy dyrektywę `sortingButton`"
+    type: "comment"
+  - 
+    timestamp: 272.1
+    description: "camelCase!"
+    type: "comment"
+  - 
+    timestamp: 279.1
+    description: "W HTML rozdzielamy myślnikiem."
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: nazewnictwo"
+    description: "W HTML nie ma znaczenia czy używamy wielkich czy małych liter dlatego rozdzielamy słowa za pomocą myślników."
+    timestamp: 281
+    type: "snippet"
+  - 
+    timestamp: 283.1
+    description: "Dyrektywa będzie funkcją ..."
+    type: "comment"
+  - 
+    timestamp: 286.1
+    description: "... która zwróci obiekt ..."
+    type: "comment"
+  - 
+    timestamp: 288.6
+    description: "... będący definicją tej dyrektywy."
+    type: "comment"
+  - 
+    timestamp: 293.1
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: restrict"
+    description: "Pole `restrict` określa sposób użycia dyrektywy:\n\n* `A` - dyrektywa może być użyta wyłącznie jako customowy atrybut\n* `E` - dyrektywy używamy jak nowego tagu HTML\n* `C` - używamy tylko nazwy klasy\n\nMożemy oczywiście połączyć kilka własności: np. `restrict: 'AEC'`."
+    timestamp: 294
+    type: "snippet"
+  - 
+    timestamp: 296.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 306.1
+    description: "Wewnętrzne dyrektywy angular'a."
+    type: "comment"
+  - 
+    timestamp: 308.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 314.6
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: scope"
+    description: "Użycie zapisu `scope: {}` izoluje naszą dyrektywę od reszty aplikacji. \n\nW przypadku, gdy nie używamy pola `scope` w naszej dyrektywie będziemy mogli używać zmiennych pochodzących np. z kontrolera `MyFirstCtrl` (tak jak dziedziczymy scope w funkcji w czystym JS)\n\nW przeciwnym wypadku dyrektywa będzie miała własny `scope`, w którym nie będziemy widzieć w jakim kontekście została ona użyta."
+    timestamp: 315
+    type: "snippet"
+  - 
+    timestamp: 317.1
+    description: "Powiedzmy Angularowi co ma być wyświetlone."
+    type: "comment"
+  - 
+    timestamp: 324.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 339.1
+    description: "**Działa?** Zobaczmy na stronę."
+    type: "comment"
+  - 
+    timestamp: 348
+    title: "Angular: Dyrektywy: restrict"
+    description: "Zmień pole `restrict` na `A` lub `C` i zobacz, że template nie zostaje wstawiony."
+    meta: "exists('sorting-button:empty', 2)"
+    type: "task"
+  - 
+    timestamp: 357.6
+    description: "Zamiast wypisywania **string'ów** w JS warto zrobić **template** w osobnym pliku."
+    type: "comment"
+  - 
+    timestamp: 360.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 363.6
+    description: "Podajmy adres template'u."
+    type: "comment"
+  - 
+    timestamp: 375.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 388.4
+    description: "Przekopiujmy do **sortingButton.html** fragment HTMLa."
+    type: "comment"
+  - 
+    timestamp: 390.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 392.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 394.4
+    description: "Zacznijmy tylko od przycisku **price**"
+    type: "comment"
+  - 
+    timestamp: 402.4
+    description: "Usuńmy kod przerzucony do template'u."
+    type: "comment"
+  - 
+    timestamp: 403.6
+    description: "**Działa?**"
+    type: "comment"
+  - 
+    timestamp: 419.4
+    description: ""
+    type: "comment"
+  - 
+    title: "Inne: Sortowanie w dyrektywie"
+    description: "Sprawdź, że przycisk sortowania po cenie działa.\n\nPrzez wykomentowanie `scope: {}` widzimy i możemy modyfikować zmienne pochodzące z kontrolera, takie jak: `sorting.by` i `sorting.desc`."
+    timestamp: 427
+    type: "snippet"
+  - 
+    timestamp: 431.4
+    description: "Mamy w pełni działające przyciski sortowanie po cenie. Zróbmy, żeby dyrektywa była **parametryzowalna**."
+    type: "comment"
+  - 
+    timestamp: 457.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 475.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 476.9
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: Scope"
+    description: "Dzięki temu, że wszystkie parametry dyrektywy przekazujemy jako atrybuty dyrektywę będzie dużo łatwiej użyć ponownie w innym miejscu aplikacji lub nawet w nowym projekcie."
+    timestamp: 481
+    type: "snippet"
+  - 
+    timestamp: 481.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 505.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 510.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 514.4
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: Binding"
+    description: "Podczas bindowania możesz też zmienić nazwę pola. Zajrzyj do [dokumentacji dyrektyw](https://docs.angularjs.org/guide/directive) jak to zrobić.\n\n[Opis możliwych wartości do bindowania](https://umur.io/angularjs-directives-using-isolated-scope-with-attributes/)"
+    timestamp: 519
+    type: "snippet"
+  - 
+    timestamp: 528.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 534.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 536.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 539.6
+    description: "Spróbujmy wypisać zmienną `text` z naszej dyrektywy."
+    type: "comment"
+  - 
+    timestamp: 541.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 545.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 559.1
+    description: ""
+    type: "comment"
+  - 
+    title: "Inne: Dyrektywy: Scope"
+    description: "Przyciski nie działają, bo scope jest zaizolowany i nie mamy już dostępu do zmiennych z kontrolera: `sorting.by` i `sorting.desc`."
+    timestamp: 583
+    type: "snippet"
+  - 
+    timestamp: 583.6
+    description: "Przyciski do sortowania nie działają."
+    type: "comment"
+  - 
+    timestamp: 588.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 590.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 595.1
+    description: ""
+    type: "comment"
+  - 
+    title: "Inne: Dyrektywy: Scope"
+    description: "Przekazujemy `sorting=\"sorting\"` bo chcemy, żeby zmienna lokalna dla dyrektywy nazywała się sorting (nazwa atrybutu).\n\nJako wartość atrybutu wrzucamy nazwę zmiennej pochodzącej ze scope kontrolera `MyFirstCtrl` - dzięki temu będziemy mogli używać tej samej nazwy w dyrektywie i kontrolerze."
+    timestamp: 597
+    type: "snippet"
+  - 
+    timestamp: 598.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 599.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 599.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 606.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 620.1
+    description: "Wiązanie przez `=` pozwala związać przez referencję zmienną ze scope'u wyżej, w tym przypadku kontrolera."
+    type: "comment"
+  - 
+    title: "Inne: Dyrektywy: Scope"
+    description: "Wiązanie to odbywa się przez referencję, więc wewnątrz dyrektywy będziemy widzieć dokładnie ten sam obiekt co w kontrolerze."
+    timestamp: 622
+    type: "snippet"
+  - 
+    timestamp: 623.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 637.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 639.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 642.4
+    description: "Zmieńmy nazwę na `sort`, żeby odróżnic dwie zmienne..."
+    type: "comment"
+  - 
+    timestamp: 644.9
+    description: "... również w dyrektywie."
+    type: "comment"
+  - 
+    timestamp: 645.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 651.4
+    description: "W templacie do dyrektywy też będziemy używać zmiennej `sort`."
+    type: "comment"
+  - 
+    timestamp: 659.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 674.9
+    description: "Funkcję `sortBy` też musimy przenieść do dyrektywy."
+    type: "comment"
+  - 
+    timestamp: 675.9
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 679.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 682.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 683.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 685.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 686.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 695.9
+    description: "Tworzymy funkcję o nazwie `link`, która również dostaje `$scope`."
+    type: "comment"
+  - 
+    timestamp: 696.9
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Dyrektywy: link"
+    description: "Proces obsługi dyrektyw przez AngularJS jest dość skomplikowany i wykracza poza materiał tego kursu.\n\nW skrócie: metoda `link` uruchamiana jest przed podpięciem templatu do drzewa DOM i jest zalecana do umieszczania w niej logiki dyrektywy.\n\nO różnicach pomiędzy `link`, `controller` i `compile` można przeczytać na \n[wątku StackOverflow na temat dyrektyw](http://stackoverflow.com/questions/15676614/directive-link-vs-compile-vs-controller)."
+    timestamp: 703
+    type: "snippet"
+  - 
+    timestamp: 703.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 708.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 710.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 713.6
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 730.1
+    description: "Ciągle modyfikujemy tylko `price`..."
+    type: "comment"
+  - 
+    timestamp: 734.6
+    description: "... a chcielibyśmy modyfikować to co jest w `value`."
+    type: "comment"
+  - 
+    timestamp: 737.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 739.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 740.6
+    description: "Musimy najpierw przyjąć wartość przekazywaną w atrybucie."
+    type: "comment"
+  - 
+    timestamp: 742.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 749.4
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 754.4
+    description: ""
+    type: "comment"
+  - 
+    title: "Inne: Sortowanie w dyrektywie"
+    description: "Działa!"
+    timestamp: 755
+    type: "snippet"
+  - 
+    timestamp: 756.4
+    description: "Sprawdź czy aplikacja działa. I napisz kilka dyrektyw samemu :)"
+    type: "comment"
+

@@ -1,0 +1,285 @@
+---
+annotations:
+  - 
+    timestamp: 5
+    description: "Mamy działające sortowanie, ale nie wiemy po jakim polu sortujemy. **Co możemy zrobić**?"
+    type: "comment"
+  - 
+    timestamp: 6
+    description: "Podświetlmy przycisk aktywnego sortowania."
+    type: "comment"
+  - 
+    title: "Bootstrap: Stany przycisków"
+    description: "Klasa `active` pozwala na wyświetlaniu przycisku jako aktywny.\n\n[Dokumentacja `button.active](http://getbootstrap.com/css/#buttons-active)"
+    timestamp: 22
+    type: "snippet"
+  - 
+    timestamp: 22.8
+    description: "Użyliśmy bootstrapowej klasy `active`"
+    type: "comment"
+  - 
+    timestamp: 28.9
+    description: "... albo klasy `btn-success`"
+    type: "comment"
+  - 
+    timestamp: 33
+    title: "Bootstrap: Stany przycisków"
+    description: "Spróbuj zmienić stan przycisku na wyłączony `disabled` i sprawdź czy można na niego kliknąć."
+    meta: "exists('button.btn.disabled') || exists('button.btn[disabled]')"
+    type: "task"
+  - 
+    timestamp: 40.1
+    description: "Wroćmy do `active`."
+    type: "comment"
+  - 
+    timestamp: 49.3
+    description: "Klasa ma być ustawiana tylko gdy spełniony jest warunek."
+    type: "comment"
+  - 
+    title: "Angular: ngClass"
+    description: "[Dokumentacja `ngClass`](https://docs.angularjs.org/api/ng/directive/ngClass)"
+    timestamp: 56
+    type: "snippet"
+  - 
+    timestamp: 57.3
+    description: "`ng-class` pozawala na warunkowe wstawianie klas"
+    type: "comment"
+  - 
+    timestamp: 66.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 85.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 86
+    title: "Angular: ngClass"
+    description: "Spróbuj użyć wyrażenia `sorting.by === 'price' ?` `'btn-succcess' : 'btn-danger'` wewnątrz `ngClass`"
+    meta: "exists('button[ng-class*=\"?\"]')"
+    type: "task"
+  - 
+    timestamp: 87.6
+    description: "Sprawdźmy czy działa?"
+    type: "comment"
+  - 
+    timestamp: 92.6
+    description: "Usunęliśmy jeszcze `active`"
+    type: "comment"
+  - 
+    timestamp: 94.6
+    description: "Zróbmy to samo przy przycisku **Name**. **Jak to zrobić**"
+    type: "comment"
+  - 
+    timestamp: 96.1
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 99.6
+    description: "Sprawdźmy działanie. **Pytania?**"
+    type: "comment"
+  - 
+    timestamp: 100.6
+    description: "**Dodajmy ikonki** pokazujące czy sortowanie jest malejące czy rosnące."
+    type: "comment"
+  - 
+    title: "Inne: Sortowanie"
+    description: "Kliknij na przyciski sortowania, żeby zobaczyć efekty `ngClass`"
+    timestamp: 106
+    type: "snippet"
+  - 
+    timestamp: 126.6
+    description: "Dodaliśmy 'up' - jak dodać 'down'?"
+    type: "comment"
+  - 
+    timestamp: 128.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 131.6
+    description: "Dodalismy druga ikonkę - **działa**?"
+    type: "comment"
+  - 
+    title: "Bootstrap: ikonki"
+    description: "Ikonki w Bootstrapie są wektorowe - zmieniając `font-size` możesz zmieniać ich rozmiar.\n\nDużo większy zestaw ikon wektorowych dostępny jest w paczce [FontAwesome](http://fortawesome.github.io/Font-Awesome/)"
+    timestamp: 133
+    type: "snippet"
+  - 
+    timestamp: 138
+    description: "Musimy wyświetlać ikonki warunkowo - **jak**?"
+    type: "comment"
+  - 
+    title: "Angular: ngShow"
+    description: "`ngShow` oraz `ngHide` pokazują i ukrywają elementy aplikując modyfikując styl `display` elementu. \n\n`ngIf` całkowicie usuwa elementy z drzewa DOM.\n\n`ngShow` i `ngHide` będą działać dużo szybciej (szczególnie przy dużych modyfikacji wielu elementów na raz), ale powodują, że mamy sporo elementów w drzewie DOM co wpływa na ilość zajmowanej przez stronę pamięci."
+    timestamp: 153
+    type: "snippet"
+  - 
+    timestamp: 158.8
+    description: "Sortowanie malejące - **działa**? Jak zrobić to samo dla rosnącego?"
+    type: "comment"
+  - 
+    timestamp: 163.3
+    description: "Done! Sprawdźmy... Ale co się dzieje jak przełączamy na **Name**? Ikonki przy **Price** zostają. **Co z tym zrobić**?"
+    type: "comment"
+  - 
+    timestamp: 203.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 214.3
+    description: "Done! Działa?"
+    type: "comment"
+  - 
+    title: "Angular: ngSwitch"
+    description: "Jeżeli chcemy wyświetlać różne fragmenty HTML w zależności od wartości jednej zmiennej możemy również skorzystać z `ngSwitch`.\n\n[Dokumentacja `ngSwitch`](https://docs.angularjs.org/api/ng/directive/ngSwitch)"
+    timestamp: 215
+    type: "snippet"
+  - 
+    timestamp: 225.8
+    description: "Zróbmy podobnie dla **Name**."
+    type: "comment"
+  - 
+    timestamp: 226.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 229.3
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Extra: Reużywanie kody"
+    description: "Nasz kod HTMLowy zawiera sporo logiki dotyczącej wyświetlania aplikacji. Z jednej strony dzięki temu nasz kod JS nie zawiera żadnych odwołań do drzewa DOM (i widoku), ale z drugiej strony bardzo łatwo można stworzyć całkowicie nieczytelny kod HTMLowy.\n\nNa szczęście w AngularJS po zamknięciu takiego kodu w dyrektywę (o czym później) będziemy mogli łatwo napisać testy. [Więcej o testowaniu](https://docs.angularjs.org/guide/unit-testing)"
+    timestamp: 232
+    type: "snippet"
+  - 
+    timestamp: 245
+    description: "Podgląd już nie jest nam potrzebny - usuńmy go."
+    type: "comment"
+  - 
+    timestamp: 254
+    description: "**Pytania?**"
+    type: "comment"
+  - 
+    timestamp: 265.5
+    description: "Dodajmy fitrowanie  - chcielibyśmy filtrować listę po **nazwie** zadania."
+    type: "comment"
+  - 
+    timestamp: 268.3
+    description: "Dodaliśmy nowy wiersz, żeby uporządkować wygląd..."
+    type: "comment"
+  - 
+    timestamp: 272
+    description: "W nowym wierszu wstawimy sobie pole tekstowe."
+    type: "comment"
+  - 
+    timestamp: 275.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 280.8
+    description: "Pojawił się input. Nadajmy mu klasę bootstrapową."
+    type: "comment"
+  - 
+    title: "Bootstrap: form-control"
+    description: "Dodając klasę `form-control` element automatycznie zostanie rozszerzony do 100% i będzie ostylowany przez Bootstrapa.\n\n[Dokumentacja formularzy w Bootstrapie](http://getbootstrap.com/css/#forms)"
+    timestamp: 284
+    type: "snippet"
+  - 
+    timestamp: 284.3
+    description: "Ta klasa przydałaby się też przy edycji todo'sów - dodajmy."
+    type: "comment"
+  - 
+    timestamp: 292.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 299
+    title: "Bootstrap: form sizing"
+    description: "Zmień rozmiar pola filtrowania na [`sm`](http://getbootstrap.com/css/#forms-control-sizes)"
+    meta: "exists('.col-sm-12 > input.form-control.input-sm')"
+    type: "task"
+  - 
+    timestamp: 301
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 302.8
+    description: "Aby wyświetlić obok pola tekstowego ikonkę, użyjmy grupy pól (`input-group`)."
+    type: "comment"
+  - 
+    timestamp: 308.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 311.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 313.3
+    description: "Tutaj dodamy miejsce na ikonę, używając bootstrapowego `input-group-addon`."
+    type: "comment"
+  - 
+    timestamp: 319.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 319.8
+    description: "Wstawmy ikonkę szukania. **Jak?**"
+    type: "comment"
+  - 
+    timestamp: 329
+    title: "Bootstrap: form-group"
+    description: "Wstaw element `input-group` do elementu `div` o klasie `form-group`, aby dodać marginesy."
+    meta: "exists('div.form-group > .input-group')"
+    type: "task"
+  - 
+    timestamp: 329.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 337.5
+    description: "Działa? Chcielibyśmy teraz spiąć pole z modelem. **Pamiętacie jak**?"
+    type: "comment"
+  - 
+    timestamp: 343.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 350.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 352
+    description: "Wypiszmy tę zmienną na dole - **jakieś pomysły**?"
+    type: "comment"
+  - 
+    timestamp: 355
+    description: "**Przetestujmy!**"
+    type: "comment"
+  - 
+    title: "Inne: Filtrowanie"
+    description: "Spróbuj wpisać coś w pole filtrowania i obserwuj wynikowego JSONa."
+    timestamp: 363
+    type: "snippet"
+  - 
+    timestamp: 380
+    description: "Podobnie jak `orderBy` pozwala posortować tablicę, spróbujmy skorzystać z filtru o nazwie `filter`."
+    type: "comment"
+  - 
+    timestamp: 384.9
+    description: ""
+    type: "comment"
+  - 
+    title: "Angular: Filtr: filter"
+    description: "[Dokumentacja filtru `filter`](https://docs.angularjs.org/api/ng/filter/filter)"
+    timestamp: 388
+    type: "snippet"
+  - 
+    timestamp: 398.4
+    description: "**Działa?**"
+    type: "comment"
+  - 
+    timestamp: 401
+    description: "Pora zaimplementować to u siebie."
+    type: "comment"
+

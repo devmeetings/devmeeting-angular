@@ -1,0 +1,268 @@
+---
+annotations:
+  - 
+    timestamp: 5
+    title: "Angular: Routing"
+    description: "Tworząc rozbudowaną aplikację typu Single Page Application (SPA) nasz frontend zawiera różne stany, w których aktualnie się znajduje, np. możemy wyświetlać listę produktów lub np. pojedynczy produkt.\n\nPodobnie jak w przypadku URLi na serwerze, tak i po stronie frontendu możemy wprowadzić routing, który będzie mapował stan naszej aplikacji na fragment adresu strony, na której się znajdujemy.\n\nDzięki temu będziemy w stanie skopiować link do aktualnego stanu naszej aplikacji."
+    type: "snippet"
+  - 
+    timestamp: 15
+    description: "Rozdzielimy wyświetlanie todo'sów od dodawania - wprowadzimy **routing**."
+    type: "comment"
+  - 
+    timestamp: 28
+    title: "Inne: CDN js"
+    description: "Wiele z bibliotek jest dostępna na publicznym CDN.\n\n[cdnjs.com](http://cdnjs.com/)\n\nJeżeli chcesz mieć bardziej precyzyjną kontrolę nad skryptami skorzystaj z [`bower`](http://bower.io/)."
+    type: "snippet"
+  - 
+    timestamp: 30
+    description: "Załadujmy bibliotekę odpowiedzialną za prosty routing."
+    type: "comment"
+  - 
+    timestamp: 35
+    title: "Angular: Routing: uiRouter"
+    description: "Jako dużo bardziej rozbudowaną alternatywę dla `ngRoute` polecam [`uiRouter`](http://angular-ui.github.io/ui-router/site/#/api/ui.router)."
+    type: "snippet"
+  - 
+    timestamp: 37.3
+    description: "Musimy powiedzieć, że nasz moduł zależy od modułu `ngRoute`"
+    type: "comment"
+  - 
+    timestamp: 45
+    description: "W aplikacji musimy skonfigurować router. Wstrzykujemy `routeProvider`."
+    type: "comment"
+  - 
+    timestamp: 46
+    title: "Angular: Routing: ngRoute"
+    description: "[Dokumentacja `ngRoute`](https://docs.angularjs.org/api/ngRoute)"
+    type: "snippet"
+  - 
+    timestamp: 96
+    description: "Dodajmy domyślną route."
+    type: "comment"
+  - 
+    timestamp: 100
+    title: "Angular: Routing: $routeProvider"
+    description: "[Dokumentacja `$routeProvider`](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)"
+    type: "snippet"
+  - 
+    timestamp: 110
+    title: "Angular: Routing: Routing"
+    description: "URLe w routingu frontendowy doklejane są po znaku `#`.\nMożesz otworzyć podgląd twojego aktualnego kodu w nowym oknie, aby zobaczyć jak zmienia się adres."
+    type: "snippet"
+  - 
+    timestamp: 114.5
+    description: "Jeżeli będziemy na `/home` ..."
+    type: "comment"
+  - 
+    timestamp: 124.5
+    description: "... wtedy będziemy wyświetlać **homepage**."
+    type: "comment"
+  - 
+    timestamp: 126
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 136.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 142
+    description: "... z odnośnikiem do strony **Add Todo**."
+    type: "comment"
+  - 
+    timestamp: 153.5
+    description: "Jeśli jesteśmy na stronie `addTodo` ..."
+    type: "comment"
+  - 
+    timestamp: 161
+    description: "... wyświetlmy template dodawania."
+    type: "comment"
+  - 
+    timestamp: 172.8
+    description: "Nie określiliśmy jeszcze gdzie te templaty mają być wyświetlane."
+    type: "comment"
+  - 
+    timestamp: 182
+    title: "ngView"
+    description: "Dodaj element z dyrektywą `ng-view` aby wyświetlić routowaną zawartość."
+    meta: "exists('[ng-view]')"
+    type: "task"
+  - 
+    timestamp: 184.8
+    description: "Można to zrobić za pomocą dyrektywy `ng-view`"
+    type: "comment"
+  - 
+    timestamp: 187.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 196.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 199
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 202.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 204
+    title: "Inne: Router"
+    description: "Obecnie router już działa, ale nie wyświetla żadnej zawartości wewnątrz elementu `ng-view`.\n\nZ powodu błędu przy definicji `$routeProvider.otherwise` nie jest wyświetlany żadny template."
+    type: "snippet"
+  - 
+    timestamp: 206.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 211.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 214.8
+    description: "Nie działa - zaraz zobaczymy dlaczego!"
+    type: "comment"
+  - 
+    timestamp: 277.3
+    description: "W tym miejscu chcemy ustawić **przekierowanie**!"
+    type: "comment"
+  - 
+    timestamp: 285.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 293.8
+    description: "Wstawmy więc `ng-view` w miejscu, w którym chcemy wyświetlić zawartość określoną przez router."
+    type: "comment"
+  - 
+    timestamp: 296
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 310.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 312
+    title: "Inne: Routing"
+    description: "Przejdź na stronę dodawania todosa klikając w link."
+    type: "snippet"
+  - 
+    timestamp: 313.8
+    description: "Przetestujmy - i stwórzmy `homepage.html`"
+    type: "comment"
+  - 
+    timestamp: 360.8
+    description: "Przerzućmy do `homepage.html` zawartość naszej strony."
+    type: "comment"
+  - 
+    timestamp: 365.3
+    description: "Wyrzućmy to co nie będzie potrzebne."
+    type: "comment"
+  - 
+    timestamp: 374.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 377.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 383.8
+    description: "Kontroler będzie zdefiniowany wyżej."
+    type: "comment"
+  - 
+    timestamp: 389
+    title: "Angular: Routing: $routeProvider - kontroler"
+    description: "[`$routeProvider`](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider) pozwala zdefiniować osobny kontroler dla każdej z route."
+    type: "snippet"
+  - 
+    timestamp: 395.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 396.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 403.3
+    description: "Zdefinujmy adres strony szablonu."
+    type: "comment"
+  - 
+    timestamp: 411.8
+    description: "Stwórzmy **addTodoPage.html**"
+    type: "comment"
+  - 
+    timestamp: 429.3
+    description: "Przerzućmy do niego kod HTML."
+    type: "comment"
+  - 
+    timestamp: 433.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 446.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 452.8
+    description: "Zróbmy odrobinę porządku."
+    type: "comment"
+  - 
+    timestamp: 454.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 459
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 459.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 462.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 465.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 486
+    description: "Dodajmy przyciski do nawigacji."
+    type: "comment"
+  - 
+    timestamp: 508
+    description: "Link do strony głównej ..."
+    type: "comment"
+  - 
+    timestamp: 518
+    title: "Inne: Routing"
+    description: "Spróbuj przełączyć się pomiędzy stronami."
+    type: "snippet"
+  - 
+    timestamp: 522
+    description: "... i do dodawania Todosa."
+    type: "comment"
+  - 
+    timestamp: 530
+    description: "Poprawmy adres strony zawierającej formularz dodawania Todosa."
+    type: "comment"
+  - 
+    timestamp: 540
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 543
+    title: "Inne: Aktywny tab"
+    description: "Spróbuj określić, który tab jest aktwny i nadaj mu odpowiednie klasy.\n\n[Jak określić, który link jest wybrany w `ngRoute`?](http://stackoverflow.com/questions/12295983/set-active-tab-style-with-angularjs)"
+    type: "snippet"
+  - 
+    timestamp: 546
+    description: "Ok. Pora na implementację routingu w naszym sklepie."
+    type: "comment"
+

@@ -1,0 +1,11 @@
+---
+content:
+  name: 'Initial Content'
+  workspace:
+    active: index|html
+    size: 'xxl'
+    tabs: 
+      index|html:
+        content: !include ./index.html
+      main|js:
+        content: !include ./main.js

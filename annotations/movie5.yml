@@ -1,0 +1,370 @@
+---
+annotations:
+  - 
+    timestamp: 9
+    title: "Inne: BTC: Bitcoin"
+    description: "[Czym jest `Bitcoin`?](http://pl.wikipedia.org/wiki/Bitcoin)"
+    type: "snippet"
+  - 
+    timestamp: 15
+    description: "Dodajmy obok ceny w dolarach, cenę w bitcoinach. Skorzystajmy z API REST'owego."
+    type: "comment"
+  - 
+    timestamp: 31
+    title: "Inne: BTC: Blockchain.info"
+    description: "[Bitcoin JSON API](https://blockchain.info/api/exchange_rates_api)"
+    type: "snippet"
+  - 
+    timestamp: 34
+    description: "Angular daje nam narzędzie do odpytywania serwera ..."
+    type: "comment"
+  - 
+    timestamp: 36
+    title: "Angular: $http"
+    description: "[Dokumentacja `$http`](https://docs.angularjs.org/api/ng/service/$http)"
+    type: "snippet"
+  - 
+    timestamp: 36.5
+    description: "Skorzystajmy z blockchain.info do pobrania kursu wymiany."
+    type: "comment"
+  - 
+    timestamp: 37
+    description: "Pobierzmy dane ..."
+    type: "comment"
+  - 
+    timestamp: 41
+    title: "Angular: $http: CORS"
+    description: "Przeglądarki nie pozwalają na wykonanie ajaksowego zapytania do zewnętrznej domeny chyba, że serwer zdefiniuje odpowiednie nagłówki CORS.\n\n[CORS - Cross-origin resource sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)"
+    type: "snippet"
+  - 
+    timestamp: 45
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 47.5
+    description: "Wywołanie `$http.get` zwraca nam **promise** na rezultat."
+    type: "comment"
+  - 
+    timestamp: 49
+    title: "Angular: Promises"
+    description: "Wywołanie ajaksowe jest asynchroniczne. `$http` zamienia wywołania w `Promises`, ktore pozwalają nam w elegancki sposób radzić sobie z obsługą asynchronicznych zdarzeń.\n\n[Dokumentacja Promisów](https://www.promisejs.org/)\n\n[Promisy w AngularJS `$q`](https://docs.angularjs.org/api/ng/service/$q)"
+    type: "snippet"
+  - 
+    timestamp: 51.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 72.8
+    description: "Dopisaliśmy `$http` i mamy w **magiczny** sposób dostęp do funkcjonalności http."
+    type: "comment"
+  - 
+    timestamp: 84.8
+    description: "Nawet jeśli zamienimy argumenty - wszystko działa. **Dependency injection**. Co przypadku minifikacji?"
+    type: "comment"
+  - 
+    timestamp: 94
+    title: "Angular: DI"
+    description: "[Dependency Injection w AngularJS](https://docs.angularjs.org/guide/di)"
+    type: "snippet"
+  - 
+    timestamp: 123
+    title: "Angular: DI: How?"
+    description: "Czy wiesz jak AngularJS rozpoznaje co podałeś jako argumenty?\n\nSprawdź wywołanie w konsoli:\n\n```javascript\nFunction.prototype.toString.call(function(){\n /* Hello! */\n});\n```"
+    type: "snippet"
+  - 
+    timestamp: 134.3
+    description: "Rozwiązanie dla minifikacji."
+    type: "comment"
+  - 
+    timestamp: 137.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 143
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 145
+    title: "Angular: DI: Alternatywa"
+    description: "Alternatywnie do przekazywania tablicy możemy dodać property `$inject` do funkcji. Szczegóły dostępne są w [dokumentacji DI](https://docs.angularjs.org/guide/di)."
+    type: "snippet"
+  - 
+    timestamp: 147.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 152
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 158.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 161.8
+    description: "W tym przypadku kolejność ma już znaczenie."
+    type: "comment"
+  - 
+    timestamp: 174.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 186.3
+    description: "Mamy już dostęp do kursów. Weźmy ostatni **dostępny kurs**."
+    type: "comment"
+  - 
+    timestamp: 198.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 203.3
+    description: "Wypiszmy co pobraliśmy."
+    type: "comment"
+  - 
+    timestamp: 206.8
+    description: "Sprawdźmy jaka wartość została pobrana."
+    type: "comment"
+  - 
+    timestamp: 207.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 218
+    title: "Wyświetl cenę w BTC"
+    description: "Wyświetl cenę w BTC korzystając z `badge`"
+    meta: "exists('.badge.ng-binding')"
+    type: "task"
+  - 
+    timestamp: 219.8
+    description: "Wyświetlmy więc cenę w BTC."
+    type: "comment"
+  - 
+    timestamp: 225.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 241.5
+    description: "Wartość przepuśćmy przez filtr do walut..."
+    type: "comment"
+  - 
+    timestamp: 248.5
+    description: "... tym razem również określając **symbol waluty**."
+    type: "comment"
+  - 
+    timestamp: 254.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 263
+    description: "Sprawdźmy!"
+    type: "comment"
+  - 
+    timestamp: 264
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 267
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 273.5
+    description: "Zróbmy porządek z labelami."
+    type: "comment"
+  - 
+    timestamp: 274.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 279
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 309
+    description: "Sprawdzajmy cyklicznie kurs BTC - angular będzie automatycznie uaktualniał widok."
+    type: "comment"
+  - 
+    timestamp: 313
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 314
+    title: "Angular: $timeout"
+    description: "[Dokumentacja `$timeout`](https://docs.angularjs.org/api/ng/service/$timeout)"
+    type: "snippet"
+  - 
+    timestamp: 316.5
+    description: "Wykorzystajmy serwis `$timeout`"
+    type: "comment"
+  - 
+    timestamp: 321
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 334.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 340.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 347.5
+    description: "Chcielibyśmy pobrać cenę kolejny raz po określonym czasie."
+    type: "comment"
+  - 
+    timestamp: 362.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 395
+    title: "Angular: Serwisy"
+    description: "[Tworzenie własnych serwisów w AngularJS](https://docs.angularjs.org/guide/services#creating-services)"
+    type: "snippet"
+  - 
+    timestamp: 413.5
+    description: "Stwórzmy teraz swój **własny serwis** - ustawiający początkową listę todo'sów."
+    type: "comment"
+  - 
+    timestamp: 419.5
+    description: "Stwórzmy nasz serwis przez `factory` i nazwijmy go `TodosData`."
+    type: "comment"
+  - 
+    timestamp: 422
+    title: "Angular: Service vs Factory vs Provider"
+    description: "[Service vs Factory vs Provider](http://stackoverflow.com/questions/15666048/angular-js-service-vs-provider-vs-factory)"
+    type: "snippet"
+  - 
+    timestamp: 444.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 449.5
+    description: "Zwracamy obiekt, który będzie naszym serwisem."
+    type: "comment"
+  - 
+    timestamp: 454
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 454.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 456.5
+    description: "Niech nasz serwis zawiera listę todo'sów."
+    type: "comment"
+  - 
+    timestamp: 460
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 464
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 466
+    description: "Tak jak możemy wstrzyknąć serwisy Angularowe, możemy wstrzyknąc też nasze własne."
+    type: "comment"
+  - 
+    timestamp: 472.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 477
+    description: "Pobierzmy teraz wartość początkową z naszego serwisu."
+    type: "comment"
+  - 
+    timestamp: 485
+    title: "Angular: Serwisy"
+    description: "Serwisy mogą zawierać stan współdzielony przez wiele kontrolerów\n\nJako serwis powinniśmy też zamknąć logikę specyficzną dla danej klasy obiektów, która potencjalnie może zostać wykorzystana ponownie w innym kontrolerze.\n\nBardzo często serwisy używane są jako abstrakcja na dane otrzymywane z serwera. Zamiast hardcodować URLe w kontrolerach możemy trzymać je w serwisie. Dodatkowo pozwala nam to na cachowanie tych samych requestów."
+    type: "snippet"
+  - 
+    timestamp: 486
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 505.8
+    description: "Stwórzmy sobie serwis, który nałoży nam abstrakcję na pobieranie danych BTC."
+    type: "comment"
+  - 
+    timestamp: 508.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 526.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 530.8
+    description: "Tworzymy metodę, która jest elementem serwisu."
+    type: "comment"
+  - 
+    timestamp: 540.3
+    description: "Nasz serwis korzysta z serwisu **$http**, więc wstrzyknijmy go."
+    type: "comment"
+  - 
+    timestamp: 543
+    title: "Angular: Serwisy"
+    description: "W praktyce kontrolery mają nieprzyjemną tendencję do rozrastania się w olbrzymie funkcje.\n\nBardzo ważne jest identyfikowanie rzeczy, które są warte zamknięcia w serwis oraz wprowadzenie restrykcji związanych z architekturą aplikacji takich jak np. zakaz korzystania z `$http` w kontrolerach."
+    type: "snippet"
+  - 
+    timestamp: 557.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 559.5
+    description: "Całą logikę przerzucimy sobie do serwisu."
+    type: "comment"
+  - 
+    timestamp: 560
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 567
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 576.5
+    description: "Skorzystajmy z promisów."
+    type: "comment"
+  - 
+    timestamp: 579.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 580.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 590.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 591.8
+    description: "Skorzystajmy z naszego serwisu."
+    type: "comment"
+  - 
+    timestamp: 595.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 598.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 610.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 614.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 619.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 625.8
+    description: "Sprawdź czy wszystko działa i przejdź do rozwiązywania zadań."
+    type: "comment"
+

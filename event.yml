@@ -1,0 +1,96 @@
+---
+  liveLink: "https://xplatform.org/live/spartezAngular1"
+  title: "AngularJS (Spartez)"
+  name: "angularSpartez"
+  image: "/static/images/workshopdesc/angular_forms.jpg"
+  baseSlide: "54e12144aa9d295d4f7d9c1a"
+  visible: false
+  iterations: 
+    - 
+      title: "Iteracja 1"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 0"
+          url: "https://docs.google.com/document/d/1zS44nt6x_59jm2tt1nE7eC8JWzDZXjiFrcFwG3D38DU/preview"
+        - 
+          title: "Zadania 1"
+          url: "https://docs.google.com/document/d/1_fTjU8wzxb20aDEOZ9sNmrhOL0WuVL1Q9Asm0rIWWVY/preview#bookmark=id.kivjfjssvfl"
+      materials: 
+        - 
+          title: "Materiały 1"
+          url: "/static/sounds/angular-total-01.ogg"
+          material: "5407095e8cc21c5423e1bfa5"
+          annotations: !include ./annotations/movie1.yml
+    - 
+      title: "Iteracja 2"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 2"
+          url: "https://docs.google.com/document/d/1rzInFtWZei-uRTKfYzHzttxPuwu7vKruKqb413crEQM/preview#bookmark=id.ca0cdruovnu2"
+      materials: 
+        - 
+          title: "Materiały 2"
+          url: "/static/sounds/Angular - part2.ogg"
+          material: "5484761cd72a039541c98298"
+          annotations: !include ./annotations/movie2.yml
+    - 
+      title: "Iteracja 3"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 3"
+          url: "https://docs.google.com/document/d/1d260LaG-0ZnMkM5PxxhZ83sU5zLODZ0XZX1oAjjy154/preview#bookmark=id.v4zo9xtq258r"
+      materials: 
+        - 
+          title: "Materiały 3"
+          url: "/static/sounds/Angular - part3.ogg"
+          material: "548474d1d72a039541c98296"
+          annotations: !include ./annotations/movie3.yml
+    - 
+      title: "Iteracja 4"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 4"
+          url: "https://docs.google.com/document/d/1EubZsgCBss4N_rJ94llVU3zfIu6FFGVXBdosCiVhOtY/preview#bookmark=id.q1i8z751va1n"
+      materials: 
+        - 
+          title: "Materiały 4"
+          url: "/static/sounds/angular-total-03.ogg"
+          material: "5406f70e8cc21c5423e1bec7"
+          annotations: !include ./annotations/movie4.yml
+    - 
+      title: "Iteracja 5"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 5"
+          url: "https://docs.google.com/document/d/1brDrhPaRTMTOldycNn9unc8jJs-8xFv2ht8qncDzRHo/edit#bookmark=id.gwg0zdlwnzqz"
+      materials: 
+        - 
+          title: "Materiały 5"
+          url: "/static/sounds/angular-total-04.ogg"
+          material: "5406f7238cc21c5423e1beca"
+          annotations: !include ./annotations/movie5.yml
+    - 
+      title: "Iteracja 6"
+      status: "available"
+      tasks: 
+        - 
+          title: "Zadania 6"
+          url: "https://docs.google.com/document/d/1H5EPT9fHHOyORI2jxxJiyqiBHHhnDfRrxJgXKvHIR3E/preview#bookmark=id.bv6ntsni0ds0"
+      materials: 
+        - 
+          title: "Materiały 6"
+          url: "/static/sounds/angular-total-05.ogg"
+          material: "5406f7388cc21c5423e1becd"
+          annotations: !include ./annotations/movie6.yml
+    -
+      title: "Demo"
+      status: "available"
+      materials:
+        - title: "Testy"
+          deck:
+            deck: !include ./deck.yml

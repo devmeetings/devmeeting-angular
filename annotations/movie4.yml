@@ -1,0 +1,414 @@
+---
+annotations:
+  - 
+    timestamp: 8
+    type: "snippet"
+    description: "[Formularze w Bootstrapie](http://getbootstrap.com/css/#forms-horizontal)"
+    title: "Bootstrap: Formularze"
+  - 
+    timestamp: 9
+    description: "Stwórzmy formularz **dodawania zadania**."
+    type: "comment"
+  - 
+    timestamp: 12.5
+    description: "Dodajmy wiesz formularza, korzystając z `form-group`."
+    type: "comment"
+  - 
+    timestamp: 16
+    description: "... etykietkę ..."
+    type: "comment"
+  - 
+    timestamp: 22
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 30
+    description: "Dodajmy `input` na cenę."
+    type: "comment"
+  - 
+    timestamp: 31
+    title: "Klasa `control-label`"
+    description: "Popraw klasę elementu `label` na `control-label`"
+    meta: "exists('label.control-label')"
+    type: "task"
+  - 
+    timestamp: 37
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 38.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 43.3
+    description: "Dodajmy pole na nazwę."
+    type: "comment"
+  - 
+    timestamp: 46.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 52.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 54.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 56
+    type: "snippet"
+    description: "Do tworzenia formularzy możesz również użyć `form-horizontal`, które umieszcza labelki obok pól formularza.\n\nNie zapominaj też o atrybucie `for` dostępnym dla elementów `label` pozwala to łączyć pola formularza z ich opisami."
+    title: "Bootstrap: Formularze: Form-horizontal"
+  - 
+    timestamp: 65.5
+    description: "Nazwijmy jeszcze formularz ..."
+    type: "comment"
+  - 
+    timestamp: 69
+    description: "... i zróbmy mały porządek."
+    type: "comment"
+  - 
+    timestamp: 71
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 72.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 75.5
+    description: "Potrzebujemy jeszcze **przycisku** do dodawania."
+    type: "comment"
+  - 
+    timestamp: 81.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 91.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 93.5
+    description: "Dodajmy ikonkę..."
+    type: "comment"
+  - 
+    timestamp: 102
+    description: "Spróbujmy **obsłużyć formularz** i dodać jego **walidację**. Zacznijmy od spięcia formularza z JS'em."
+    type: "comment"
+  - 
+    timestamp: 106
+    title: "Placeholder"
+    description: "Dodaj atrybut `placeholder` do pól formularza"
+    meta: "exists('input[placeholder]', 2)"
+    type: "task"
+  - 
+    timestamp: 133
+    description: "Połączmy z modelem element **Price**."
+    type: "comment"
+  - 
+    timestamp: 144
+    description: "To samo z polem **Name**."
+    type: "comment"
+  - 
+    timestamp: 149
+    description: "Obsłużmy dodawanie Todo'sa przez obsługę przycisku. **Jak?**"
+    type: "comment"
+  - 
+    timestamp: 164.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 180
+    type: "snippet"
+    description: "Wszystkie [wyrażenia (`Expressions`)](https://docs.angularjs.org/guide/expression) w AngularJS są \"wybaczające\". Korzystanie z nieistniejących zmiennych, obiektów czy funkcji nie powoduje błędu AngularJS powinien działać dalej.\n\nTrzeba mieć to na uwadze szczególnie przy tworzeniu własnych filtrów, które również nie powinny się wysypywać."
+    title: "Angular: Expressions: Forgiving"
+  - 
+    timestamp: 197.3
+    description: "W kontrolerze musimy dopisać odpowiednią funkcjonalność."
+    type: "comment"
+  - 
+    timestamp: 199.8
+    description: "Najpierw zmienną do przechowywania Todo'sa ... "
+    type: "comment"
+  - 
+    timestamp: 201.3
+    description: " ... i funkcję **dodającą Todo'sa.**"
+    type: "comment"
+  - 
+    timestamp: 203
+    type: "snippet"
+    description: "AngularJS nie stworzy dla nas pustego obiektu, ale stworzy brakujące w obiekcie pola. Aby formularz działał poprawnie musimy tylko zadeklarować pusty obiekt."
+    title: "Inne: $scope"
+  - 
+    timestamp: 210.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 212.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 220
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 232.3
+    description: "Jak dodać Todo'sa do tablicy?"
+    type: "comment"
+  - 
+    timestamp: 233.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 235.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 247.8
+    description: "Spróbujmy przetestować. **Prawie dobrze :-)** Dlaczego tak się dzieje? (referencja...)?"
+    type: "comment"
+  - 
+    timestamp: 259
+    type: "snippet"
+    description: "Spróbuj dodać nowego todosa, a później zmodyfikować pola formularza."
+    title: "Inne: Dodawanie - referencja"
+  - 
+    timestamp: 273
+    type: "snippet"
+    description: "Nie tworzymy nowego obiektu dla nowego todosa!"
+    title: "Inne: Dodawanie - referencja"
+  - 
+    timestamp: 301.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 303.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 309.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 335
+    type: "snippet"
+    description: "Spróbuj zastanowić się jak zrobić dodawanie w bardziej elegancki sposób.\n\nCzy HTML powinien być miejscem na taką logikę?"
+    title: "Inne: Dodawanie w JS"
+  - 
+    timestamp: 335.5
+    description: "Dopiszmy **domyślną nazwę** dodawanego zadania ..."
+    type: "comment"
+  - 
+    timestamp: 342.8
+    description: "... i domyślną cenę."
+    type: "comment"
+  - 
+    timestamp: 347.3
+    description: "Wprowadźmy **walidację**. Możemy skorzystać z pewnych mechanizmów HTML5 do walidacji."
+    type: "comment"
+  - 
+    timestamp: 374
+    type: "snippet"
+    description: "[Obsługa walidacji formularzy w AngularJS](https://docs.angularjs.org/guide/forms)"
+    title: "Angular: Forms"
+  - 
+    timestamp: 387
+    title: "Required"
+    description: "Ustaw pola formularza jako wymagane `required`"
+    meta: "exists('input[required]', 2)"
+    type: "task"
+  - 
+    timestamp: 387.3
+    description: "Zadeklarujmy pole **cena** jako wymagane. **Jak to zrobić?**"
+    type: "comment"
+  - 
+    timestamp: 394.3
+    description: "Zróbmy to samo dla **nazwy**."
+    type: "comment"
+  - 
+    timestamp: 396.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 418.8
+    description: "Jeśli chcemy dodać własną walidację, musimy wyłączyć walidację HTML5 ..."
+    type: "comment"
+  - 
+    timestamp: 426
+    description: "... nazwać formularz ..."
+    type: "comment"
+  - 
+    timestamp: 427
+    type: "snippet"
+    description: "Atrybut `novalidate` wyłącza domyślne mechanizmy walidacji obsługiwane w przeglądarce. W ten sposób mówimy, że całość walidacji obsłużymy samemu, aby nie duplikować np. wiadomości o błędach."
+    title: "Angular: Forms: novalidate"
+  - 
+    timestamp: 443.5
+    description: "... i wszystkie pola."
+    type: "comment"
+  - 
+    timestamp: 444.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 447
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 448
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 450
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 453.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 456.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 458.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 476.8
+    description: "Zmieńmy kolor pola jeśli walidacja nie przechodzi. Angular udostępnia **specjalne zmienne**."
+    type: "comment"
+  - 
+    timestamp: 479.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 480
+    type: "snippet"
+    description: "[Bootstrapowe klasy wyświetlające stan walidacji](http://getbootstrap.com/css/#forms-control-validation)"
+    title: "Bootstrap: walidacja"
+  - 
+    timestamp: 487
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 506
+    title: "Walidacja formularza"
+    description: "Popraw klasę walidacji na `has-error` umieszczone na elemencie `form-group`"
+    meta: "exists('.form-group[ng-class*=\"has-error\"]')"
+    type: "task"
+  - 
+    timestamp: 506
+    description: "Przetestujmy... Dlaczego nie działa?"
+    type: "comment"
+  - 
+    timestamp: 523
+    type: "snippet"
+    description: "W Angularze 1.3 pojawia się nowe pole `ngMessages`, z którego łatwo możemy wyświetlać informacje o tym, które walidacje nie przechodzą.\n\n[Jak korzystać z `ngMessages`?](http://www.yearofmoo.com/2014/05/how-to-use-ngmessages-in-angularjs.html)\n\nW kursie używamy jeszcze AngularJS w wersji 1.2, więc musimy korzystać z pola `$error`, np. `f.name.$error.required`."
+    title: "Angular: Forms: AngularJS 1.3"
+  - 
+    timestamp: 548.5
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 553
+    description: "Walidację ustawmy na całej grupie!"
+    type: "comment"
+  - 
+    timestamp: 565
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 565.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 577
+    type: "snippet"
+    description: "Spróbuj usunąć domyślną wartość z pola `Price`, aby zobaczyć błąd walidacji."
+    title: "Inne: Walidacja"
+  - 
+    timestamp: 605.3
+    description: "Zróbmy analogiczną operację dla **poprawnej wartości**."
+    type: "comment"
+  - 
+    timestamp: 606.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 608.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 613.3
+    description: "Przetestujmy gruntownie!"
+    type: "comment"
+  - 
+    timestamp: 620
+    title: "$dirty"
+    description: "Użyj pola `f.$dirty`, aby aktywować klasę `has-success` tylko kiedy użytkownik zmieni coś w formularzu."
+    meta: "exists('.form-group[ng-class*=\"$dirty\"]')"
+    type: "task"
+  - 
+    timestamp: 649
+    type: "snippet"
+    description: "[Lista możliwych wartości atrybutu `type` w HTML5](https://developer.mozilla.org/pl/docs/Web/HTML/Element/Input)\n\nCiekawe typy:\n* `email` - Adres e-mail\n* `range` - Liczby z określonego zakresu\n* `color` - Wybór koloru"
+    title: "Bootstrap: Formularze: Typy inputów w HTML5"
+  - 
+    timestamp: 655.8
+    description: "Dodajmy teraz walidację dla pola **Name**."
+    type: "comment"
+  - 
+    timestamp: 658.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 659.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 668.3
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 675.8
+    description: "Możemy dodać więcej walidacji do naszego pola, np. ustawmy minimalną długość nazwy."
+    type: "comment"
+  - 
+    timestamp: 687.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 690.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 691
+    title: "minLength"
+    description: "Zmień `ngMinlength` na `8` i sprawdź, że Angular określi to pole jako `$invalid`."
+    meta: "exists('input[ng-minlength=\"8\"]')"
+    type: "task"
+  - 
+    timestamp: 704.8
+    description: "Powinniśmy wyłączyć możliwość wysłania formularza, jeśli jest niepoprawny."
+    type: "comment"
+  - 
+    timestamp: 717.8
+    description: ""
+    type: "comment"
+  - 
+    timestamp: 722
+    type: "snippet"
+    description: "[Dokumentacja `ngDisabled`](https://docs.angularjs.org/api/ng/directive/ngDisabled)"
+    title: "Angular: ngDisabled"
+  - 
+    timestamp: 729
+    type: "snippet"
+    description: "Wszystkie własności walidacji takie jak: `$valid`, `$dirty`, `$errors` dostępne są także na całym formularzu, dzięki czemu nie musimy wypisywać wszystkich pól, które się w nim znajdują."
+    title: "Angular: Forms"
+  - 
+    timestamp: 737.3
+    description: "**Testujemy** i pora zaimplementować coś samemu."
+    type: "comment"
+
