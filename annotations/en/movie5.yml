@@ -1,0 +1,365 @@
+---
+  annotations: 
+    - 
+      timestamp: 9
+      title: "Others: BTC: Bitcoin"
+      description: "[What is `Bitcoin`?](http://pl.wikipedia.org/wiki/Bitcoin)"
+      type: "snippet"
+    - 
+      timestamp: 15
+      description: "Next to USD price we could try to add price in BITCOINS. Let's use REST API for that."
+      type: "comment"
+    - 
+      timestamp: 31
+      title: "Others: BTC: Blockchain.info"
+      description: "[Bitcoin JSON API](https://blockchain.info/api/exchange_rates_api)"
+      type: "snippet"
+    - 
+      timestamp: 34
+      description: "Angular gives us a tool to query the server ..."
+      type: "comment"
+    - 
+      timestamp: 36
+      title: "Angular: $http"
+      description: "[Docs for `$http`](https://docs.angularjs.org/api/ng/service/$http)"
+      type: "snippet"
+    - 
+      timestamp: 36.5
+      description: "We can use blockchain.info to fetch conversion rate."
+      type: "comment"
+    - 
+      timestamp: 37
+      description: "Let's fetch it ..."
+      type: "comment"
+    - 
+      timestamp: 41
+      title: "Angular: $http: CORS"
+      description: "Browser does not allow to make AJAX calls to other domain, unless it returns proper CORS headers.\n\n[CORS - Cross-origin resource sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)"
+      type: "snippet"
+    - 
+      timestamp: 45
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 47.5
+      description: "Invoking `$http.get` returns a **promise** for the result."
+      type: "comment"
+    - 
+      timestamp: 49
+      title: "Angular: Promises"
+      description: "AJAX calls are asynchronous. `$http` is changing the call into a `Promises`, which allows you to handle asynchronicity in very concise way.\n\n[Docs for Promises](https://www.promisejs.org/)\n\n[Promises in AngularJS `$q`](https://docs.angularjs.org/api/ng/service/$q)"
+      type: "snippet"
+    - 
+      timestamp: 51.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 72.8
+      description: "We have just wrote `$http` and in some **magical way** we have access to $http."
+      type: "comment"
+    - 
+      timestamp: 84.8
+      description: "Event if we change the order of the arguments - it still works! **Dependency injection**. What about minification?"
+      type: "comment"
+    - 
+      timestamp: 94
+      title: "Angular: DI"
+      description: "[Dependency Injection in AngularJS](https://docs.angularjs.org/guide/di)"
+      type: "snippet"
+    - 
+      timestamp: 123
+      title: "Angular: DI: How?"
+      description: "Do you know how Angular knows what do you expect?\n\nTry invoking in the console:\n\n```javascript\nFunction.prototype.toString.call(function(){\n /* Hello! */\n});\n```"
+      type: "snippet"
+    - 
+      timestamp: 134.3
+      description: "This way we can handle minification."
+      type: "comment"
+    - 
+      timestamp: 137.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 143
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 145
+      title: "Angular: DI: Alternatywa"
+      description: "As an alternative we can add property `$inject` to the function. Details can be found in [docs for DI](https://docs.angularjs.org/guide/di)."
+      type: "snippet"
+    - 
+      timestamp: 147.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 152
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 158.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 161.8
+      description: "Now the order matters."
+      type: "comment"
+    - 
+      timestamp: 174.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 186.3
+      description: "We have now access to the conversion rates. We can pick **last available rate**."
+      type: "comment"
+    - 
+      timestamp: 198.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 203.3
+      description: "Let's print out what we got."
+      type: "comment"
+    - 
+      timestamp: 206.8
+      description: "Let's check what value has been fetched."
+      type: "comment"
+    - 
+      timestamp: 207.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 218
+      title: "Wyświetl cenę w BTC"
+      description: "Display the BTC price using `badge`"
+      meta: "exists('.badge.ng-binding')"
+      type: "task"
+    - 
+      timestamp: 219.8
+      description: "So let's display price in BTC."
+      type: "comment"
+    - 
+      timestamp: 225.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 241.5
+      description: "We can pipe the value through `currency` filter..."
+      type: "comment"
+    - 
+      timestamp: 248.5
+      description: "... but this time we can specify **currency symbol**."
+      type: "comment"
+    - 
+      timestamp: 254.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 263
+      description: "Let's check this!"
+      type: "comment"
+    - 
+      timestamp: 264
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 267
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 273.5
+      description: "A little tiding with the labels."
+      type: "comment"
+    - 
+      timestamp: 274.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 279
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 309
+      description: "Let's check BTC rate in some intervals. Angular will update the view automatically."
+      type: "comment"
+    - 
+      timestamp: 313
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 314
+      title: "Angular: $timeout"
+      description: "[Docs for `$timeout`](https://docs.angularjs.org/api/ng/service/$timeout)"
+      type: "snippet"
+    - 
+      timestamp: 316.5
+      description: "We can use `$timeout` service"
+      type: "comment"
+    - 
+      timestamp: 321
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 334.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 340.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 347.5
+      description: "We would like to fetch the rate again after some time."
+      type: "comment"
+    - 
+      timestamp: 362.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 395
+      title: "Angular: Services"
+      description: "[Creating custom services in AngularJS](https://docs.angularjs.org/guide/services#creating-services)"
+      type: "snippet"
+    - 
+      timestamp: 413.5
+      description: "We can now create our **own service** - that will contain initial list of todos."
+      type: "comment"
+    - 
+      timestamp: 419.5
+      description: "Let's use `factory` and call it `TodosData`."
+      type: "comment"
+    - 
+      timestamp: 422
+      title: "Angular: Service vs Factory vs Provider"
+      description: "[Service vs Factory vs Provider](http://stackoverflow.com/questions/15666048/angular-js-service-vs-provider-vs-factory)"
+      type: "snippet"
+    - 
+      timestamp: 444.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 449.5
+      description: "We return object, that will represent our service."
+      type: "comment"
+    - 
+      timestamp: 454
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 454.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 456.5
+      description: "We can make our service contain the list of todos."
+      type: "comment"
+    - 
+      timestamp: 460
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 464
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 466
+      description: "In the same way we are injecting Angular services we can inject our own."
+      type: "comment"
+    - 
+      timestamp: 472.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 477
+      description: "Let's now fetch the initial data from our service."
+      type: "comment"
+    - 
+      timestamp: 486
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 505.8
+      description: "We are now creating a service that will abstract fetching BTC data for us."
+      type: "comment"
+    - 
+      timestamp: 508.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 526.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 530.8
+      description: "We create a method that is part of our service."
+      type: "comment"
+    - 
+      timestamp: 540.3
+      description: "Our service will use `$http` services. So we need to inject it."
+      type: "comment"
+    - 
+      timestamp: 543
+      title: "Angular: Serices"
+      description: "In practive controllers have tendency to grow very large into huge functions.\n\nIt's very important to identify things that are worth closing into a service. We can also try to make restrictions about architecture of our application: For instance - ban for using `$http` directly in controllers or directives."
+      type: "snippet"
+    - 
+      timestamp: 557.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 559.5
+      description: "Entire logic is moved to the service."
+      type: "comment"
+    - 
+      timestamp: 560
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 567
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 576.5
+      description: "We can use promises."
+      type: "comment"
+    - 
+      timestamp: 579.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 580.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 590.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 591.8
+      description: "And now let's use our service."
+      type: "comment"
+    - 
+      timestamp: 595.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 598.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 610.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 614.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 619.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 625.8
+      description: "Check if everything works and now is the time to solve some tasks."
+      type: "comment"
+

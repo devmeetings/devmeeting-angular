@@ -1,0 +1,280 @@
+---
+  annotations: 
+    - 
+      timestamp: 5
+      description: "The sorting is working, but we don't know which one is active. **What could we try to do**?"
+      type: "comment"
+    - 
+      timestamp: 6
+      description: "Let's mark active sorting button."
+      type: "comment"
+    - 
+      title: "Bootstrap: Button state"
+      description: "Class `active` allows you to display the button as active.\n\n[Docs for `button.active](http://getbootstrap.com/css/#buttons-active)"
+      timestamp: 22
+      type: "snippet"
+    - 
+      timestamp: 22.8
+      description: "We've used `active` class from Bootstrap"
+      type: "comment"
+    - 
+      timestamp: 28.9
+      description: "... or `btn-success`"
+      type: "comment"
+    - 
+      timestamp: 33
+      title: "Bootstrap: Button state"
+      description: "Try to change button state to `disabled` and check if it's clickable."
+      meta: "exists('button.btn.disabled') || exists('button.btn[disabled]')"
+      type: "task"
+    - 
+      timestamp: 40.1
+      description: "Now back to `active`."
+      type: "comment"
+    - 
+      timestamp: 49.3
+      description: "Class should be added only if a condition is met."
+      type: "comment"
+    - 
+      title: "Angular: ngClass"
+      description: "[Docs for `ngClass`](https://docs.angularjs.org/api/ng/directive/ngClass)"
+      timestamp: 56
+      type: "snippet"
+    - 
+      timestamp: 57.3
+      description: "`ng-class` let's us insert the class conditionally"
+      type: "comment"
+    - 
+      timestamp: 66.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 85.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 86
+      title: "Angular: ngClass"
+      description: "Try to use expression `sorting.by === 'price' ?` `'btn-succcess' : 'btn-danger'` inside `ngClass`"
+      meta: "exists('button[ng-class*=\"?\"]')"
+      type: "task"
+    - 
+      timestamp: 87.6
+      description: "Let's check if it's working?"
+      type: "comment"
+    - 
+      timestamp: 92.6
+      description: "We removed `active`"
+      type: "comment"
+    - 
+      timestamp: 94.6
+      description: "We can make the same thing with **Name** button. **How?**"
+      type: "comment"
+    - 
+      timestamp: 96.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 99.6
+      description: "Let's check the app. **Any Questions?**"
+      type: "comment"
+    - 
+      timestamp: 100.6
+      description: "We can **add icons** to display if sorting is ascending or descending."
+      type: "comment"
+    - 
+      title: "Inne: Sortowanie"
+      description: "Click on th sorting button to watch the effects of `ngClass`"
+      timestamp: 106
+      type: "snippet"
+    - 
+      timestamp: 126.6
+      description: "We've added 'up' - how to add 'down'?"
+      type: "comment"
+    - 
+      timestamp: 128.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 131.6
+      description: "Second icon added - **working**?"
+      type: "comment"
+    - 
+      title: "Bootstrap: Icons"
+      description: "Icons in Bootstrap are vectors. By changing `font-size` you can change the icon size.\n\nThere is much bigger set of vector icons in [FontAwesome](http://fortawesome.github.io/Font-Awesome/)"
+      timestamp: 133
+      type: "snippet"
+    - 
+      timestamp: 138
+      description: "We have to display icons conditionally - **do you know how**?"
+      type: "comment"
+    - 
+      title: "Angular: ngShow"
+      description: "`ngShow` and `ngHide` display and hides elements by changing the `display` style. \n\n`ngIf` is removing the element from DOM completely.\n\n`ngShow` and `ngHide` will work much faster, but we will have a lot of elements inside DOM and this will affect memory usage"
+      timestamp: 153
+      type: "snippet"
+    - 
+      timestamp: 158.8
+      description: "Descending sorting - **working**? How to do the same thing for ascending sorting?"
+      type: "comment"
+    - 
+      timestamp: 163.3
+      description: "Done! Let's try it... But what happens if we switch to **Name**? Icons at **Price** are still displayed. **What could we do about that**?"
+      type: "comment"
+    - 
+      timestamp: 203.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 214.3
+      description: "Done! Does it work?"
+      type: "comment"
+    - 
+      title: "Angular: ngSwitch"
+      description: "If we want to display different parts of HTML depending on one value we can also use `ngSwitch`.\n\n[Docs for `ngSwitch`](https://docs.angularjs.org/api/ng/directive/ngSwitch)"
+      timestamp: 215
+      type: "snippet"
+    - 
+      timestamp: 225.8
+      description: "Let's make it similar for **Name**."
+      type: "comment"
+    - 
+      timestamp: 226.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 229.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 245
+      description: "We don't need this preview any more."
+      type: "comment"
+    - 
+      timestamp: 254
+      description: "**Do you have any questions?**"
+      type: "comment"
+    - 
+      timestamp: 265.5
+      description: "Let's add filtering  - we would like to filter the list by task **name**."
+      type: "comment"
+    - 
+      timestamp: 268.3
+      description: "We've added new row to tidy up the view..."
+      type: "comment"
+    - 
+      timestamp: 272
+      description: "In new row, let's add a text field."
+      type: "comment"
+    - 
+      timestamp: 275.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 280.8
+      description: "We have now the input. We can give it proper Bootstrap class."
+      type: "comment"
+    - 
+      title: "Bootstrap: form-control"
+      description: "By adding `form-control` class element will have 100% width and will be styled by Bootstrap.\n\n[Docs for forms in Bootstrap](http://getbootstrap.com/css/#forms)"
+      timestamp: 284
+      type: "snippet"
+    - 
+      timestamp: 284.3
+      description: "We should use this class also for todos edition."
+      type: "comment"
+    - 
+      timestamp: 292.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 299
+      title: "Bootstrap: form sizing"
+      description: "Change the size of the field to [`input-sm`](http://getbootstrap.com/css/#forms-control-sizes)"
+      meta: "exists('.col-sm-12 > input.form-control.input-sm')"
+      type: "task"
+    - 
+      timestamp: 301
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 302.8
+      description: "To display an icon beside the input we can use `input-group`."
+      type: "comment"
+    - 
+      timestamp: 308.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 311.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 313.3
+      description: "Here we can add a placeholder for an icon, using `input-group-addon`."
+      type: "comment"
+    - 
+      timestamp: 319.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 319.8
+      description: "Let's insert searching icon. **How?**"
+      type: "comment"
+    - 
+      timestamp: 329
+      title: "Bootstrap: form-group"
+      description: "Wrap element `.input-group` using `div` with class `form-group` to add proper margins."
+      meta: "exists('div.form-group > .input-group')"
+      type: "task"
+    - 
+      timestamp: 329.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 337.5
+      description: "Does it work? Now we would like to bind input with our model. **Do you remember how**?"
+      type: "comment"
+    - 
+      timestamp: 343.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 350.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 352
+      description: "Let's display this variable at the bottom. **Any ideas**?"
+      type: "comment"
+    - 
+      timestamp: 355
+      description: "**Let's test it!**"
+      type: "comment"
+    - 
+      title: "Others: Filtering"
+      description: "Try to write something inside the field and observe the JSON"
+      timestamp: 363
+      type: "snippet"
+    - 
+      timestamp: 380
+      description: "`orderBy` allows you to sort the array, we can try to use filter named `filter`."
+      type: "comment"
+    - 
+      timestamp: 384.9
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Filters: filter"
+      description: "[Docs for `filter`](https://docs.angularjs.org/api/ng/filter/filter)"
+      timestamp: 388
+      type: "snippet"
+    - 
+      timestamp: 398.4
+      description: "**Does it work?**"
+      type: "comment"
+    - 
+      timestamp: 401
+      description: "It's time to implement this in our app."
+      type: "comment"
+

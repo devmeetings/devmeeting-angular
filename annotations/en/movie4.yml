@@ -1,0 +1,389 @@
+---
+  annotations: 
+    - 
+      timestamp: 8
+      type: "snippet"
+      description: "[Forms in Bootstrap](http://getbootstrap.com/css/#forms-horizontal)"
+      title: "Bootstrap: Forms"
+    - 
+      timestamp: 9
+      description: "Let's create form to **add new todo**."
+      type: "comment"
+    - 
+      timestamp: 12.5
+      description: "We can add a row in our form, using `form-group`."
+      type: "comment"
+    - 
+      timestamp: 16
+      description: "... and label ..."
+      type: "comment"
+    - 
+      timestamp: 22
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 30
+      description: "Let's add an `input` for a price."
+      type: "comment"
+    - 
+      timestamp: 31
+      title: "Klasa `control-label`"
+      description: "Fix class of `label` element to `control-label`"
+      meta: "exists('label.control-label')"
+      type: "task"
+    - 
+      timestamp: 37
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 38.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 43.3
+      description: "Let's add field for name."
+      type: "comment"
+    - 
+      timestamp: 46.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 52.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 54.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 56
+      type: "snippet"
+      description: "To create forms you can also use `form-horizontal`, which displays labels next to form fields.\n\nDon't forget about `for` attribute in `label` elements. It will link a label with the input field."
+      title: "Bootstrap: Forms: Form-horizontal"
+    - 
+      timestamp: 65.5
+      description: "We need to provide a name..."
+      type: "comment"
+    - 
+      timestamp: 69
+      description: "... and let's do a little clean-up."
+      type: "comment"
+    - 
+      timestamp: 71
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 72.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 75.5
+      description: "We also need a **button** to add items."
+      type: "comment"
+    - 
+      timestamp: 81.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 91.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 93.5
+      description: "Dodajmy ikonkę..."
+      type: "comment"
+    - 
+      timestamp: 102
+      description: "Let's try to **handle the form** and add a **validation**. Let's start with binding the form with our JS code."
+      type: "comment"
+    - 
+      timestamp: 106
+      title: "Placeholder"
+      description: "Add `placeholder` attribute to form fields"
+      meta: "exists('input[placeholder]', 2)"
+      type: "task"
+    - 
+      timestamp: 133
+      description: "Let's connect element **Price** with our model."
+      type: "comment"
+    - 
+      timestamp: 144
+      description: "Same with **Name** field."
+      type: "comment"
+    - 
+      timestamp: 149
+      description: "We should handle adding new todos by clicking the button. **How can we do this?**"
+      type: "comment"
+    - 
+      timestamp: 164.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 180
+      type: "snippet"
+      description: "All [`Expressions`](https://docs.angularjs.org/guide/expression) in AngularJS are \"forgiving\". Using unexisting variables, objects or functions will not cause any errors.\n\nYou should conside this especially when creating your own filters, which should not throw errors either."
+      title: "Angular: Expressions: Forgiving"
+    - 
+      timestamp: 197.3
+      description: "In controller we have to implement these functions"
+      type: "comment"
+    - 
+      timestamp: 199.8
+      description: "First we need variable to store the todo... "
+      type: "comment"
+    - 
+      timestamp: 201.3
+      description: " ... and the function that **adds todo**"
+      type: "comment"
+    - 
+      timestamp: 203
+      type: "snippet"
+      description: "AngularJS will not create empty object for us, but it will create missing fields. If we want the form to work correctly we ust need to declare empty object."
+      title: "Others: $scope"
+    - 
+      timestamp: 210.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 212.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 220
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 232.3
+      description: "How to add Todo to the array?"
+      type: "comment"
+    - 
+      timestamp: 233.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 235.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 247.8
+      description: "Let's test it. **Almost OK :-)** Why does it happen? (reference...)?"
+      type: "comment"
+    - 
+      timestamp: 301.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 303.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 309.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 335.5
+      description: "Let's add some default name of our new task..."
+      type: "comment"
+    - 
+      timestamp: 342.8
+      description: "... and default price."
+      type: "comment"
+    - 
+      timestamp: 347.3
+      description: "We can introduce some **validation**. We can use existing HTML5 attributes."
+      type: "comment"
+    - 
+      timestamp: 374
+      type: "snippet"
+      description: "[Handling validation in forms in AngularJS](https://docs.angularjs.org/guide/forms)"
+      title: "Angular: Forms"
+    - 
+      timestamp: 387
+      title: "Required"
+      description: "Change the fields of the form to be `required`"
+      meta: "exists('input[required]', 2)"
+      type: "task"
+    - 
+      timestamp: 387.3
+      description: "Let's try to declare field **price** as required."
+      type: "comment"
+    - 
+      timestamp: 394.3
+      description: "Same thing for **name**."
+      type: "comment"
+    - 
+      timestamp: 396.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 418.8
+      description: "If we want AngularJS to handle validation we need to disable HTML5 validation ..."
+      type: "comment"
+    - 
+      timestamp: 426
+      description: "... name the form ..."
+      type: "comment"
+    - 
+      timestamp: 443.5
+      description: "... and all the fields."
+      type: "comment"
+    - 
+      timestamp: 444.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 447
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 448
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 450
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 453.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 456.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 458.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 476.8
+      description: "Let's change the control color when validation is invalid. Angular gives us some **special properties**."
+      type: "comment"
+    - 
+      timestamp: 479.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 480
+      type: "snippet"
+      description: "[Bootstrap classes for validation](http://getbootstrap.com/css/#forms-control-validation)"
+      title: "Bootstrap: Validation"
+    - 
+      timestamp: 487
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 506
+      title: "Form validation"
+      description: "Fix the validation class to `has-error` on the `form-group` element"
+      meta: "exists('.form-group[ng-class*=\"has-error\"]')"
+      type: "task"
+    - 
+      timestamp: 506
+      description: "Let's test it... Why it doesn't work?"
+      type: "comment"
+    - 
+      timestamp: 548.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 553
+      description: "We need validation on the whole `form-group`!"
+      type: "comment"
+    - 
+      timestamp: 565
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 565.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 577
+      type: "snippet"
+      description: "Try to remove default value from `Price` property to see validation error."
+      title: "Others: Validation"
+    - 
+      timestamp: 605.3
+      description: "Let's make similar thing when **form is valid**."
+      type: "comment"
+    - 
+      timestamp: 606.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 608.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 613.3
+      description: "Let's test it!"
+      type: "comment"
+    - 
+      timestamp: 620
+      title: "$dirty"
+      description: "Use property `f.$dirty`, to activate class `has-success` only if user changes something in the form."
+      meta: "exists('.form-group[ng-class*=\"$dirty\"]')"
+      type: "task"
+    - 
+      timestamp: 649
+      type: "snippet"
+      description: "[List of the possible `type` values in HTML5](https://developer.mozilla.org/pl/docs/Web/HTML/Element/Input)\n\nInteresting types:\n* `email` - e-mail address\n* `range` - numbers from some range\n* `color` - choosing the color"
+      title: "Bootstrap: Forms: Types of inputs in HTML5"
+    - 
+      timestamp: 655.8
+      description: "Let's add validation for **Name**."
+      type: "comment"
+    - 
+      timestamp: 658.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 659.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 668.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 675.8
+      description: "We can add more validation rules to our field, let's try with minimal length of the name."
+      type: "comment"
+    - 
+      timestamp: 687.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 690.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 691
+      title: "minLength"
+      description: "Change `ngMinlength` to `8` and check if Angular will mark this field as `$invalid`."
+      meta: "exists('input[ng-minlength=\"8\"]')"
+      type: "task"
+    - 
+      timestamp: 704.8
+      description: "We should disable the possibility to send the form if it's not valid."
+      type: "comment"
+    - 
+      timestamp: 717.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 722
+      type: "snippet"
+      description: "[Docs for `ngDisabled`](https://docs.angularjs.org/api/ng/directive/ngDisabled)"
+      title: "Angular: ngDisabled"
+    - 
+      timestamp: 729
+      type: "snippet"
+      description: "We can also check the state of the entire form: `$valid`, `$dirty`, `$errors`."
+      title: "Angular: Forms"
+    - 
+      timestamp: 737.3
+      description: "**Let's test** and write something on our own!"
+      type: "comment"
+

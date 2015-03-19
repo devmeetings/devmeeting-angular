@@ -1,0 +1,258 @@
+---
+  annotations: 
+    - 
+      timestamp: 15
+      description: "Let's split displaying the todos from adding them - we are introducing **routing**."
+      type: "comment"
+    - 
+      timestamp: 28
+      title: "Others: CDN js"
+      description: "A lot of libraries is available on public CDN.\n\n[cdnjs.com](http://cdnjs.com/)\n\nIf you want more precise control over your dependencies use [`bower`](http://bower.io/)."
+      type: "snippet"
+    - 
+      timestamp: 30
+      description: "Let's load a library that will give us simple routing."
+      type: "comment"
+    - 
+      timestamp: 35
+      title: "Angular: Routing: uiRouter"
+      description: "As a more extended version of `ngRoute` you can try [`uiRouter`](http://angular-ui.github.io/ui-router/site/#/api/ui.router)."
+      type: "snippet"
+    - 
+      timestamp: 37.3
+      description: "We need to tell Angular that our module depends on `ngRoute` module"
+      type: "comment"
+    - 
+      timestamp: 45
+      description: "In application we have to configure the router. We inject `$routeProvider`."
+      type: "comment"
+    - 
+      timestamp: 46
+      title: "Angular: Routing: ngRoute"
+      description: "[Docs for `ngRoute`](https://docs.angularjs.org/api/ngRoute)"
+      type: "snippet"
+    - 
+      timestamp: 96
+      description: "Let's add default route."
+      type: "comment"
+    - 
+      timestamp: 100
+      title: "Angular: Routing: $routeProvider"
+      description: "[Docs for `$routeProvider`](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)"
+      type: "snippet"
+    - 
+      timestamp: 110
+      title: "Angular: Routing: Routing"
+      description: "URLs in frontend routing are appended after `#` character.\nYou can open your code in a new tab to see the URL changing."
+      type: "snippet"
+    - 
+      timestamp: 114.5
+      description: "If we are at `/home` ..."
+      type: "comment"
+    - 
+      timestamp: 124.5
+      description: "... then it should display **homepage**."
+      type: "comment"
+    - 
+      timestamp: 126
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 136.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 142
+      description: "... with a link to **Add Todo** page."
+      type: "comment"
+    - 
+      timestamp: 153.5
+      description: "If we are at the `addTodo` page ..."
+      type: "comment"
+    - 
+      timestamp: 161
+      description: "... we will display template for adding new todo."
+      type: "comment"
+    - 
+      timestamp: 172.8
+      description: "We didn't declared where the templates should be injected."
+      type: "comment"
+    - 
+      timestamp: 182
+      title: "ngView"
+      description: "Add element with `ng-view` directive to display routed content."
+      meta: "exists('[ng-view]')"
+      type: "task"
+    - 
+      timestamp: 184.8
+      description: "We are using `ng-view`"
+      type: "comment"
+    - 
+      timestamp: 187.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 196.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 199
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 202.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 206.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 211.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 214.8
+      description: "It's not working - let's see why!"
+      type: "comment"
+    - 
+      timestamp: 277.3
+      description: "Here we would like to create a **redirection**."
+      type: "comment"
+    - 
+      timestamp: 285.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 293.8
+      description: "Let's insert `ng-view` to the element which will display our content."
+      type: "comment"
+    - 
+      timestamp: 296
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 310.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 312
+      title: "Others: Routing"
+      description: "Change the page using provided links."
+      type: "snippet"
+    - 
+      timestamp: 313.8
+      description: "Let's test and create `homepage.html`"
+      type: "comment"
+    - 
+      timestamp: 360.8
+      description: "We are moving everything to `homepage.html`."
+      type: "comment"
+    - 
+      timestamp: 365.3
+      description: "Let's throw away what's not needed."
+      type: "comment"
+    - 
+      timestamp: 374.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 377.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 383.8
+      description: "Controller will be defined above."
+      type: "comment"
+    - 
+      timestamp: 389
+      title: "Angular: Routing: $routeProvider - controller"
+      description: "[`$routeProvider`](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider) allows to declare different controllers for each rotue."
+      type: "snippet"
+    - 
+      timestamp: 395.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 396.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 403.3
+      description: "Let's declare the template URL."
+      type: "comment"
+    - 
+      timestamp: 411.8
+      description: "And create **addTodoPage.html**"
+      type: "comment"
+    - 
+      timestamp: 429.3
+      description: "Now moving some HTML there."
+      type: "comment"
+    - 
+      timestamp: 433.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 446.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 452.8
+      description: "Let's tidy-up a little bit."
+      type: "comment"
+    - 
+      timestamp: 454.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 459
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 459.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 462.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 465.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 486
+      description: "We should now add some navigation buttons."
+      type: "comment"
+    - 
+      timestamp: 508
+      description: "Main Page link..."
+      type: "comment"
+    - 
+      timestamp: 518
+      title: "Others: Routing"
+      description: "Try to switch between pages."
+      type: "snippet"
+    - 
+      timestamp: 522
+      description: "... and adding new todo."
+      type: "comment"
+    - 
+      timestamp: 530
+      description: "Let's fix the address of adding todo page."
+      type: "comment"
+    - 
+      timestamp: 540
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 543
+      title: "Others: Active tab"
+      description: "Try to determine which tab is active and give it proper classes.\n\n[How to determine which link is active in `ngRoute`?](http://stackoverflow.com/questions/12295983/set-active-tab-style-with-angularjs)"
+      type: "snippet"
+    - 
+      timestamp: 546
+      description: "Ok. Now let's implement routing in our shop."
+      type: "comment"
+

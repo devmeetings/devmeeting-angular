@@ -1,0 +1,522 @@
+---
+  annotations: 
+    - 
+      title: "Angular: Extra: Docs"
+      description: "If you checked the docs before you probably noticed the notation that we will be using right now.\n\nUsing global functions in very hard to maintain and is not recommended in any larger projects."
+      timestamp: 25
+      type: "snippet"
+    - 
+      timestamp: 25.6
+      description: "Controller is now a global function - in larger application this will cause a lot of troubles!"
+      type: "comment"
+    - 
+      timestamp: 29.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 32.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 34.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 39.4
+      description: "Angular allows you to organize the code inside the **modules**."
+      type: "comment"
+    - 
+      title: "Angular: Modules"
+      description: "Modules allows us to split the application logicaly. Potentially module should be ready to be re-used in other project.\n\n[What is a module?](https://docs.angularjs.org/guide/module)"
+      timestamp: 43
+      type: "snippet"
+    - 
+      timestamp: 45.9
+      description: "From the global `angular` object we can create new module ..."
+      type: "comment"
+    - 
+      timestamp: 59.1
+      description: "... that will represent the whole application - let's call it `TodoApp`"
+      type: "comment"
+    - 
+      title: "Angular: Extra: Naming"
+      description: "In large applications it is recommended to prefix the names of your modules, directives and controllers to avoid conflicts with external libraries.\n\n[https://docs.angularjs.org/guide/module](Naming Guideline in AngularJS)"
+      timestamp: 61
+      type: "snippet"
+    - 
+      timestamp: 63.6
+      description: "As second argument we are passing the modules that our application depends on."
+      type: "comment"
+    - 
+      timestamp: 74.6
+      description: "Inside modules we can register **controllers**."
+      type: "comment"
+    - 
+      timestamp: 89.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 92.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 95.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 99.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 109.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 129.6
+      description: "App have stopped working. Angular doesn't know that the our base module is `TodoApp`."
+      type: "comment"
+    - 
+      timestamp: 131
+      title: "ngApp"
+      description: "Pass as a value to `ng-app` name of created module."
+      meta: "exists('html[ng-app=\"TodoApp\"]')"
+      type: "task"
+    - 
+      timestamp: 135.6
+      description: "It's now working again."
+      type: "comment"
+    - 
+      title: "Others: ngRepeat"
+      description: "Hmmm.... Don't you thing we could solve this issue using `ngRepeat`?"
+      timestamp: 166
+      type: "snippet"
+    - 
+      timestamp: 178.5
+      description: "We can see a lot of duplicated code. **What can we do about it?**"
+      type: "comment"
+    - 
+      timestamp: 186
+      title: "ngRepeat"
+      description: "Try to use `ngRepeat` to avoid duplication sorting buttons."
+      meta: "exists('[ng-repeat] button[ng-click*=\"sortBy\"]', 2) || exists('button[ng-click*=\"sortBy\"][ng-repeat]', 2)"
+      type: "task"
+    - 
+      timestamp: 201.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 206.6
+      description: "Angular allows us to create our own **tags**. They call it **directives**."
+      type: "comment"
+    - 
+      title: "Angular: Directives"
+      description: "[Docs for directives](https://docs.angularjs.org/guide/directive)\n\nTo be honest we were using internal directives for the whole time! Every `ng-*` attribute is actually a directive!\n\nDirectives are the glue between model and view."
+      timestamp: 208
+      type: "snippet"
+    - 
+      timestamp: 210.4
+      description: "But first let's start from the usage of our directive."
+      type: "comment"
+    - 
+      timestamp: 213.4
+      description: "We would like to have an element named `sorting-button`"
+      type: "comment"
+    - 
+      timestamp: 226.9
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Directives: restrict"
+      description: "Directives can be used as tags, attributes or even classes.\n\nType of usage is declared in JS using `restrict` property."
+      timestamp: 227
+      type: "snippet"
+    - 
+      timestamp: 231.9
+      description: "We would like to sort using `price`"
+      type: "comment"
+    - 
+      timestamp: 233.9
+      description: "And for the label we would like to display**Price**"
+      type: "comment"
+    - 
+      timestamp: 238.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 240.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 243.6
+      description: "And `name` by analogy"
+      type: "comment"
+    - 
+      timestamp: 243.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 246.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 251.4
+      description: "Now we should write some logic for it :-) **Directives** allows you to create components with their own logic and template"
+      type: "comment"
+    - 
+      timestamp: 265.9
+      description: "Let's create `sortingButton` directive"
+      type: "comment"
+    - 
+      timestamp: 272.1
+      description: "camelCase!"
+      type: "comment"
+    - 
+      timestamp: 279.1
+      description: "In HTML we use dash."
+      type: "comment"
+    - 
+      title: "Angular: Directives: Naming"
+      description: "In HTML the case doesn't matter, this is why we separate the words using dash."
+      timestamp: 281
+      type: "snippet"
+    - 
+      timestamp: 283.1
+      description: "Directive will be a function ..."
+      type: "comment"
+    - 
+      timestamp: 286.1
+      description: "... returning an object ..."
+      type: "comment"
+    - 
+      timestamp: 288.6
+      description: "... that would be a definition of this directive."
+      type: "comment"
+    - 
+      timestamp: 293.1
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Directives: restrict"
+      description: "`restrict` property declares type of the directive:\n\n* `A` - directive can only be used as an attribute\n* `E` - we use directive as new tag in HTML\n* `C` - we use only as a class name\n\nWe can also combine multiple values f.g. `restrict: 'AEC'`."
+      timestamp: 294
+      type: "snippet"
+    - 
+      timestamp: 296.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 306.1
+      description: "Internal Angular directives."
+      type: "comment"
+    - 
+      timestamp: 308.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 314.6
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Directives: scope"
+      description: "By typing `scope: {}` we have isolated directive from other parts of application.\n\nIn case we doesn't use `scope` we have access to variables that comes from the controller.\n\nIn other case directive will have it's own scope."
+      timestamp: 315
+      type: "snippet"
+    - 
+      timestamp: 317.1
+      description: "Let's tell AngularJS what should be displayed."
+      type: "comment"
+    - 
+      timestamp: 324.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 339.1
+      description: "**Does it work?** Let's check the website."
+      type: "comment"
+    - 
+      timestamp: 348
+      title: "Angular: Directives: restrict"
+      description: "Change property `restrict` to `A` or `C` and observe that the template is not injected."
+      meta: "exists('sorting-button:empty', 2)"
+      type: "task"
+    - 
+      timestamp: 357.6
+      description: "Instead of writing **strings** it would be better to create a **template** in separate file."
+      type: "comment"
+    - 
+      timestamp: 360.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 363.6
+      description: "Let's give a template address"
+      type: "comment"
+    - 
+      timestamp: 375.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 388.4
+      description: "We can copy some parts of HTML to **sortingButton.html**."
+      type: "comment"
+    - 
+      timestamp: 390.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 392.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 394.4
+      description: "Let's start from the **price** button."
+      type: "comment"
+    - 
+      timestamp: 402.4
+      description: "Let's remove the code moved to a template."
+      type: "comment"
+    - 
+      timestamp: 403.6
+      description: "**Is it working?**"
+      type: "comment"
+    - 
+      timestamp: 419.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 431.4
+      description: "Now we have fully functional sorting by `price`. Let's make the directive parametrizable."
+      type: "comment"
+    - 
+      timestamp: 457.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 475.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 476.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 481.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 505.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 510.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 514.4
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Directives: Binding"
+      description: "When binding attribute you can also change it's name. Check it out in [docs for directives](https://docs.angularjs.org/guide/directive) jak to zrobić.\n\n[Opis możliwych wartości do bindowania](https://umur.io/angularjs-directives-using-isolated-scope-with-attributes/)"
+      timestamp: 519
+      type: "snippet"
+    - 
+      timestamp: 528.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 534.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 536.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 539.6
+      description: "Let's try to display `text` variable from our directive."
+      type: "comment"
+    - 
+      timestamp: 541.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 545.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 559.1
+      description: ""
+      type: "comment"
+    - 
+      title: "Others: Directives: Scope"
+      description: "Buttons are not working, because scoep is isolated and we cannot access variables from controller: `sorting.by` and `sorting.desc`."
+      timestamp: 583
+      type: "snippet"
+    - 
+      timestamp: 583.6
+      description: "Sorting buttons are broken."
+      type: "comment"
+    - 
+      timestamp: 588.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 590.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 595.1
+      description: ""
+      type: "comment"
+    - 
+      title: "Others: Directives: Scope"
+      description: "We are passing `sorting=\"sorting\"` because we want variable that is local for directive to be called `sorting`.\n\nAs attribute value we pass the name of the variable coming from the scope of the controller."
+      timestamp: 597
+      type: "snippet"
+    - 
+      timestamp: 598.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 599.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 599.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 606.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 620.1
+      description: "Binding by `=` passes the reference to the variable from scope above. In this case it's our controller."
+      type: "comment"
+    - 
+      title: "Others: Directives: Scope"
+      description: "Binding by `=` passes the reference to the variable from scope above. We will have the same object in two places."
+      timestamp: 622
+      type: "snippet"
+    - 
+      timestamp: 623.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 637.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 639.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 642.4
+      description: "Let's change the name to `sort` to distinguish both of the variables..."
+      type: "comment"
+    - 
+      timestamp: 644.9
+      description: "... don't forget about the directive."
+      type: "comment"
+    - 
+      timestamp: 645.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 651.4
+      description: "Inside the directive template we will use `sort` variable."
+      type: "comment"
+    - 
+      timestamp: 659.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 674.9
+      description: "`sortBy` function is moved inside the directive."
+      type: "comment"
+    - 
+      timestamp: 675.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 679.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 682.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 683.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 685.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 686.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 695.9
+      description: "We can create a function called `link`, which also gets a `$scope`."
+      type: "comment"
+    - 
+      timestamp: 696.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 703.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 708.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 710.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 713.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 730.1
+      description: "We are still modyfing only the `price`..."
+      type: "comment"
+    - 
+      timestamp: 734.6
+      description: "... and we would like to change the things that are inside the `value`."
+      type: "comment"
+    - 
+      timestamp: 737.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 739.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 740.6
+      description: "We have to accept the attribute first."
+      type: "comment"
+    - 
+      timestamp: 742.1
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 749.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 754.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 756.4
+      description: "Check if everything is now working. You can now try to write few directives on your own :)"
+      type: "comment"
+

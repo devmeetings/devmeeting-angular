@@ -1,0 +1,635 @@
+---
+  annotations: 
+    - 
+      timestamp: 11
+      description: "Let's start with an empty HTML page."
+      type: "comment"
+    - 
+      timestamp: 21
+      description: "Now let's include AngularJS"
+      type: "comment"
+    - 
+      title: "Others: Google CDN"
+      description: "[List of libraries hosted in Google CDN](https://developers.google.com/speed/libraries/devguide)"
+      timestamp: 29
+      type: "snippet"
+    - 
+      timestamp: 41
+      description: "Now we have to tell that HTML should be parsed by AngularJS"
+      type: "comment"
+    - 
+      timestamp: 42
+      title: "ngApp"
+      description: "Let's add `ng-app`"
+      meta: "exists('html[ng-app]')"
+      type: "task"
+    - 
+      timestamp: 51.7
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: ngApp"
+      description: "[Docs for `ngApp`](https://docs.angularjs.org/api/ng/directive/ngApp)"
+      timestamp: 58
+      type: "snippet"
+    - 
+      timestamp: 64.4
+      description: "Introducing some dynamic content"
+      type: "comment"
+    - 
+      title: "Angular: Expressions"
+      description: "[Docs for `expressions`](https://docs.angularjs.org/guide/expression)"
+      timestamp: 71
+      type: "snippet"
+    - 
+      timestamp: 85
+      title: "Expressions"
+      description: "Create `expression` inside `h3`, that will concatenate two strings"
+      meta: "exists('h3.ng-binding')"
+      type: "task"
+    - 
+      timestamp: 94.8
+      description: "We can also display dynamic content in other way"
+      type: "comment"
+    - 
+      title: "Angular: ngBind"
+      description: "[Docs for `ngBind`](https://docs.angularjs.org/api/ng/directive/ngBind)\n[Docs for `ngBindHtml`](https://docs.angularjs.org/api/ng/directive/ngBindHtml)"
+      timestamp: 107
+      type: "snippet"
+    - 
+      timestamp: 144
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 153
+      description: "Angular is passing the `$scope`"
+      type: "comment"
+    - 
+      timestamp: 176
+      description: "We have exported the variable."
+      type: "comment"
+    - 
+      timestamp: 185
+      title: "ngController"
+      description: "Let's add attribute `ng-controller` with value `MyFirstCtrl`"
+      meta: "exists('.container[ng-controller=MyFirstCtrl]')"
+      type: "task"
+    - 
+      timestamp: 203.7
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 212
+      description: "We can try to change the text to exported variable."
+      type: "comment"
+    - 
+      timestamp: 214
+      description: "We forgot about something...!"
+      type: "comment"
+    - 
+      title: "Angular: ngController"
+      description: "[Docs for `ngController`](https://docs.angularjs.org/api/ng/directive/ngController)"
+      timestamp: 216
+      type: "snippet"
+    - 
+      timestamp: 235
+      title: "script"
+      description: "Append the `script` tag that includes `main.js` file"
+      meta: "exists('script[src=\"main.js\"]')"
+      type: "task"
+    - 
+      timestamp: 241
+      description: "Does it work?"
+      type: "comment"
+    - 
+      timestamp: 254
+      description: "We can bind any string. Let's try to export property `greeting`."
+      type: "comment"
+    - 
+      timestamp: 261
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 264
+      description: "How to bind HTML?"
+      type: "comment"
+    - 
+      timestamp: 268
+      description: "Property `greeting` was bind with `span`. Does it work?"
+      type: "comment"
+    - 
+      timestamp: 275
+      description: "Changing this to `Hi` - still works?"
+      type: "comment"
+    - 
+      title: "Bootstrap: list-group"
+      description: "[Docs for `list-group` component](http://getbootstrap.com/components/#list-group)"
+      timestamp: 301
+      type: "snippet"
+    - 
+      timestamp: 302
+      description: "Let's display todo list!"
+      type: "comment"
+    - 
+      timestamp: 306
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 310
+      description: "We would like to export list element from JS world. **How can we achieve that?**"
+      type: "comment"
+    - 
+      timestamp: 317
+      description: "Inside the controller we've created `todo` object. Let's add `name`."
+      type: "comment"
+    - 
+      timestamp: 327.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 333.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 342
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 347.9
+      description: "We can try to display this object. **Any ideas?**"
+      type: "comment"
+    - 
+      timestamp: 355
+      title: "Expressions"
+      description: "Use `expression` and display `todo.name`"
+      meta: "exists('.list-group-item.ng-binding')"
+      type: "task"
+    - 
+      timestamp: 367.4
+      description: ""
+      type: "comment"
+    - 
+      title: "Bootstrap: list-group"
+      description: "[Docs for `label` component](http://getbootstrap.com/components/#labels)"
+      timestamp: 380
+      type: "snippet"
+    - 
+      timestamp: 381
+      description: "And inside Bootstrap's `label` we can display **product price**"
+      type: "comment"
+    - 
+      timestamp: 390
+      title: "Bootstrap: label-danger"
+      description: "Display the price using `label-danger`"
+      meta: "exists('.label.label-danger')"
+      type: "task"
+    - 
+      timestamp: 400
+      description: "Does it work?"
+      type: "comment"
+    - 
+      timestamp: 432
+      description: "Obviously todo list have to be an array, not an object. Let's create it."
+      type: "comment"
+    - 
+      timestamp: 435
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 439
+      description: "We can now move first todo."
+      type: "comment"
+    - 
+      timestamp: 441.5
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 446.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 450.5
+      description: "Let's add another stuff to do."
+      type: "comment"
+    - 
+      timestamp: 456.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 464.5
+      description: "We can add `completed` property now."
+      type: "comment"
+    - 
+      timestamp: 469.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 472.6
+      description: "Let's create more todos."
+      type: "comment"
+    - 
+      timestamp: 481.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 492
+      description: "Now back to HTML. **How can we iterate the todos?**"
+      type: "comment"
+    - 
+      timestamp: 499
+      title: "ngRepeat"
+      description: "Use `ng-repeat` attribute with value: `todo in todos`"
+      meta: "exists('.list-group-item[ng-repeat=\"todo in todos\"]')"
+      type: "task"
+    - 
+      timestamp: 503.6
+      description: "For each `todo` ..."
+      type: "comment"
+    - 
+      timestamp: 510.3
+      description: "... in our array `todos` ..."
+      type: "comment"
+    - 
+      timestamp: 513.8
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: ngRepeat"
+      description: "[Docs for `ngRepeat`](https://docs.angularjs.org/api/ng/directive/ngRepeat)"
+      timestamp: 525
+      type: "snippet"
+    - 
+      timestamp: 530.2
+      description: "**Does it work? Any Questions?**"
+      type: "comment"
+    - 
+      timestamp: 531.2
+      description: "We can now display if task is finished or not. Let's try to use `checkbox`."
+      type: "comment"
+    - 
+      timestamp: 537.9
+      description: "We now have to bind our variable from JS to HTML"
+      type: "comment"
+    - 
+      timestamp: 549.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 552.5
+      description: "We've added `completed` for third todo."
+      type: "comment"
+    - 
+      timestamp: 556.2
+      description: "We have to connect this to the checkbox..."
+      type: "comment"
+    - 
+      timestamp: 573.4
+      description: "First way: we can use `checked` attribute."
+      type: "comment"
+    - 
+      timestamp: 582.5
+      description: "We've typed `false` - it didn't worked. **Why?**"
+      type: "comment"
+    - 
+      timestamp: 583.5
+      title: "ngChecked"
+      description: "Use `ngChecked` attribute. [Docs for `ngChecked`](https://docs.angularjs.org/api/ng/directive/ngChecked)"
+      meta: "exists('[ng-checked]')"
+      type: "task"
+    - 
+      timestamp: 592
+      description: "Let's bind this properly using `ng-model`"
+      type: "comment"
+    - 
+      title: "Angular: ngModel"
+      description: "[Docs for `ngModel`](https://docs.angularjs.org/api/ng/directive/ngModel)"
+      timestamp: 607
+      type: "snippet"
+    - 
+      timestamp: 608.2
+      description: "We bound checkbox with `todo.completed`. **Does it work**?"
+      type: "comment"
+    - 
+      timestamp: 618.2
+      description: "Now let's try to display what is inside `todos` array"
+      type: "comment"
+    - 
+      timestamp: 625.5
+      description: "We can use `json` filter to format the output"
+      type: "comment"
+    - 
+      timestamp: 632.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 640.5
+      description: "We format price using the `currency` filter"
+      type: "comment"
+    - 
+      title: "Angular: Filters"
+      description: "[Docs for filters in AngularJS](https://docs.angularjs.org/guide/filter)"
+      timestamp: 646
+      type: "snippet"
+    - 
+      title: "Angular: Filters: currency"
+      description: "[Docs for `currency` filter](https://docs.angularjs.org/api/ng/filter/currency)"
+      timestamp: 652
+      type: "snippet"
+    - 
+      timestamp: 652.8
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: Filters: json"
+      description: "[Docs for `json` filter](https://docs.angularjs.org/api/ng/filter/json)"
+      timestamp: 665
+      type: "snippet"
+    - 
+      timestamp: 672.2
+      description: "**Working?** We can now see what is the internal state of our application."
+      type: "comment"
+    - 
+      title: "Others: Two-way Binding"
+      description: "You can click the checkboxes and notice differences in JSON"
+      timestamp: 680
+      type: "snippet"
+    - 
+      timestamp: 682.1
+      description: "Let's click the checkboxes. Because we used `ng-model` the values are changing. This is called **two-way binding**."
+      type: "comment"
+    - 
+      timestamp: 683.1
+      description: "**Do you have any questions?**"
+      type: "comment"
+    - 
+      timestamp: 700
+      description: "Let's try to change the name to **input**."
+      type: "comment"
+    - 
+      timestamp: 708.2
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 709.7
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 714.7
+      description: ""
+      type: "comment"
+    - 
+      title: "Others: Two-way Binding"
+      description: "Try changing the name of any todo and watch changes in model."
+      timestamp: 724
+      type: "snippet"
+    - 
+      timestamp: 738
+      description: "We can add a button that will allow us to edit items."
+      type: "comment"
+    - 
+      title: "Bootstrap: buttons"
+      description: "[Docs for buttons in Bootstrap](http://getbootstrap.com/css/#buttons)"
+      timestamp: 741
+      type: "snippet"
+    - 
+      timestamp: 745.7
+      description: "Adding icon..."
+      type: "comment"
+    - 
+      title: "Bootstrap: glyphicons"
+      description: "[List of all icons available in Bootstrap](http://getbootstrap.com/components/#glyphicons)"
+      timestamp: 757
+      type: "snippet"
+    - 
+      timestamp: 763
+      title: "Bootstrap: buttons"
+      description: "Change button class to `btn-danger`."
+      meta: "exists('.btn.btn-danger')"
+      type: "task"
+    - 
+      timestamp: 767.3
+      description: "We can pull it right"
+      type: "comment"
+    - 
+      timestamp: 769.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 771
+      title: "Bootstrap: glyphicons"
+      description: "Change the icon of the button to `glyphicon-pencil`"
+      meta: "exists('.glyphicon.glyphicon-pencil')"
+      type: "task"
+    - 
+      timestamp: 784.5
+      description: "What we would like to have is: In edit mode we want to see input, but otherwise we want only text."
+      type: "comment"
+    - 
+      timestamp: 797.8
+      description: "We would like to **show** this part only when we are in **display mode**."
+      type: "comment"
+    - 
+      timestamp: 807.6
+      description: "Adding `ng-show`. When do we want to show it? **Any ideas**?"
+      type: "comment"
+    - 
+      title: "Angular: ngShow"
+      description: "[Docs for `ngShow`](https://docs.angularjs.org/api/ng/directive/ngShow)\n\n[Docs for `ngHide`](https://docs.angularjs.org/api/ng/directive/ngHide)"
+      timestamp: 810
+      type: "snippet"
+    - 
+      timestamp: 815.6
+      description: "Let's add variable `isEditMode`"
+      type: "comment"
+    - 
+      timestamp: 821.1
+      description: "In edit mode we want to **hide** the text. This is why we use `ng-hide`. But we want to show the input box - `ng-show`."
+      type: "comment"
+    - 
+      timestamp: 825
+      title: "ngIf"
+      description: "Try to use `ng-if` attribute to get the same effect."
+      meta: "exists('span[ng-if]') && exists('input[ng-if]')"
+      type: "task"
+    - 
+      timestamp: 828.6
+      description: "Using the buttons we want to toggle the state of `isEditMode` variable."
+      type: "comment"
+    - 
+      timestamp: 845.7
+      description: ""
+      type: "comment"
+    - 
+      title: "Angular: ngClick"
+      description: "[Docs for `ngClick`](https://docs.angularjs.org/api/ngTouch/directive/ngClick)"
+      timestamp: 849
+      type: "snippet"
+    - 
+      timestamp: 855.4
+      description: "Let's test it!"
+      type: "comment"
+    - 
+      timestamp: 874
+      title: "ngModel"
+      description: "Use `ngModel` and another checkbox to toggle edit mode."
+      meta: "exists('input[type=checkbox][ng-model=\"isEditMode\"]')"
+      type: "task"
+    - 
+      timestamp: 885
+      description: "Let's add **sorting** of todos."
+      type: "comment"
+    - 
+      timestamp: 886
+      description: "We can create a new row ..."
+      type: "comment"
+    - 
+      timestamp: 890.6
+      description: "... and another row."
+      type: "comment"
+    - 
+      timestamp: 896.2
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 901.8
+      description: "Let's add sorting buttons. "
+      type: "comment"
+    - 
+      timestamp: 914.4
+      description: "By **price** ..."
+      type: "comment"
+    - 
+      timestamp: 923.9
+      description: "... and by **name**."
+      type: "comment"
+    - 
+      timestamp: 925.9
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 930.5
+      description: "Let's add some margins to make it look better"
+      type: "comment"
+    - 
+      title: "Bootstrap: Grid system"
+      description: "[Docs for grid system in Bootstrap](http://getbootstrap.com/css/#grid)"
+      timestamp: 941
+      type: "snippet"
+    - 
+      timestamp: 942.8
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 957.8
+      description: "In model we add a field that will store the state of sorting."
+      type: "comment"
+    - 
+      timestamp: 963.4
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 968.9
+      description: "We will call this property `by`."
+      type: "comment"
+    - 
+      timestamp: 973.9
+      description: "By default we will be sorting by **price**"
+      type: "comment"
+    - 
+      timestamp: 979.1
+      description: "Type of sorting - if it should be **descending** or **ascending.**"
+      type: "comment"
+    - 
+      timestamp: 990
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1004.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1016
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1020.3
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1029.2
+      description: ""
+      type: "comment"
+    - 
+      title: "Others: Sorting"
+      description: "Check if sorting is working by clicking on buttons `Price` and `Name`"
+      timestamp: 1036
+      type: "snippet"
+    - 
+      timestamp: 1052.2
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1058.6
+      description: ""
+      type: "comment"
+    - 
+      timestamp: 1059.4
+      description: ""
+      type: "comment"
+    - 
+      title: "Others: Sortowanie"
+      description: "Check that property `sorting.desc` is also changing inside the model."
+      timestamp: 1066
+      type: "snippet"
+    - 
+      title: "Angular: Scopes"
+      description: "[What is `$scope`?](https://docs.angularjs.org/guide/scope)"
+      timestamp: 1121
+      type: "snippet"
+    - 
+      description: "Let's export sorting logic to a JS function"
+      timestamp: 1078.7
+      type: "comment"
+    - 
+      description: "We can write the definition of `sortBy` function."
+      timestamp: 1098.4
+      type: "comment"
+    - 
+      description: ""
+      timestamp: 1113.2
+      type: "comment"
+    - 
+      description: "To export the function we have to use `$scope`."
+      timestamp: 1115.7
+      type: "comment"
+    - 
+      description: "Let's use `sorting.by` to display sorted todos list."
+      timestamp: 1128
+      type: "comment"
+    - 
+      description: "We can use `orderBy` filter."
+      timestamp: 1171.7
+      type: "comment"
+    - 
+      description: "Let's check if sorting buttons are working."
+      timestamp: 1179.2
+      type: "comment"
+    - 
+      description: "Let's change the name to see if sorting is working."
+      timestamp: 1196.7
+      type: "comment"
+    - 
+      description: "Now let's try to write something on our own."
+      timestamp: 1210
+      type: "comment"
+    - 
+      title: "Angular: Filters: orderBy"
+      description: "[Docs for `orderBy`](https://docs.angularjs.org/api/ng/filter/orderBy)"
+      timestamp: 1165
+      type: "snippet"
+    - 
+      title: "Others: Sorting"
+      description: "Check the complete solution."
+      timestamp: 1188
+      type: "snippet"
+
