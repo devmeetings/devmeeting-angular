@@ -1,11 +1,12 @@
 ---
+-
   liveLink: "https://xplatform.org/live/spartezAngular1"
   title: "AngularJS (Spartez)"
   name: "angularSpartez"
   image: "/static/images/workshopdesc/angular_forms.jpg"
   baseSlide: "54e12144aa9d295d4f7d9c1a"
   visible: false
-  iterations: 
+  iterations: &iterations
     - 
       title: "Iteracja 1"
       status: "available"
@@ -94,3 +95,11 @@
         - title: "Testy"
           deck:
             deck: !include ./deck.yml
+
+-
+  title: "AngularJS (Other)"
+  name: "angularOther"
+  image: "/static/images/workshopdesc/angular_forms.jpg"
+  baseSlide: "54e12144aa9d295d4f7d9c1a"
+  visible: true
+  iterations: *iterations
