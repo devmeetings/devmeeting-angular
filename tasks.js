@@ -34,7 +34,7 @@
 
   function createEmbedNavigation() {
     var $btnNext = $el('button.btn.btn-default.btn-xs.nav-next');
-    var $btnPrev = $el('button.btn.btn-link.nav-prev');
+    var $btnPrev = $el('button.btn.btn-link.btn-xs.nav-prev');
     var $firstChild = $('.container > *:first-child');
     var $container = $('.container');
     $container.insertBefore($btnPrev, $firstChild);
