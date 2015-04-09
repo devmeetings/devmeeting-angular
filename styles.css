@@ -1,9 +1,10 @@
 body {
-  background-color: #1f1f1f;
+  background-color: #161616;
 }
 
 .embed body {
   font-size: 12px;
+  background-color: #1f1f1f;
 }
 .embed h1 {
   font-size: 4rem;
