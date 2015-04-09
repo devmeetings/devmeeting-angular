@@ -1,0 +1,43 @@
+body {
+  background-color: #1f1f1f;
+}
+
+.embed body {
+  font-size: 12px;
+  zoom: 0.9;
+  transform: scale(0.9);
+  transform-origin: top left;
+}
+.embed h1 {
+  font-size: 4rem;
+}
+.embed h2 {
+  font-size: 2.8rem;
+}
+.embed h3 {
+  font-size: 2rem;
+}
+.embed h4 {
+  font-size: 1.4rem;
+}
+.embed h5 {
+  font-size: 1rem;
+}
+
+.embed  header, .embed hr, .embed section {
+  display: none;
+}
+
+.embed section.active {
+  display: block;
+}
+
+.nav-next, .nav-prev {
+  margin: 5px 0 10px;
+}
+.nav-next {
+  float: right;
+}
+.nav-prev {
+  float: left;
+}
