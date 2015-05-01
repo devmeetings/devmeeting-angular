@@ -1,6 +1,6 @@
 ---
-  title: "Devmeeting AngularJS (21st March)"
-  name: "angularMarch"
+  title: "Devmeeting AngularJS Seattle (5/09)"
+  name: "angularSeattle"
   image: "/static/images/workshopdesc/angular_forms.jpg"
   baseSlide: "54e12144aa9d295d4f7d9c1a"
   visible: true
@@ -11,14 +11,14 @@
       tasks: 
         - 
           title: "Tasks 0"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task0.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task0.html"
         - 
           title: "Task 1"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task1.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task1.html"
       materials: 
         - 
           title: "Video 1"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-01.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-01.ogg"
           material: "5407095e8cc21c5423e1bfa5"
           annotations: !include ./annotations/en/movie1.yml
     - 
@@ -27,11 +27,11 @@
       tasks: 
         - 
           title: "Tasks 2"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task2.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task2.html"
       materials: 
         - 
           title: "Video 2"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-02.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-02.ogg"
           material: "5484761cd72a039541c98298"
           annotations: !include ./annotations/en/movie2.yml
     - 
@@ -40,11 +40,11 @@
       tasks: 
         - 
           title: "Tasks 3"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task3.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task3.html"
       materials: 
         - 
           title: "Video 3"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-03.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-03.ogg"
           material: "548474d1d72a039541c98296"
           annotations: !include ./annotations/en/movie3.yml
     - 
@@ -53,11 +53,11 @@
       tasks: 
         - 
           title: "Tasks 4"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task4.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task4.html"
       materials: 
         - 
           title: "Video 4"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-04.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-04.ogg"
           material: "5406f70e8cc21c5423e1bec7"
           annotations: !include ./annotations/en/movie4.yml
     - 
@@ -66,11 +66,11 @@
       tasks: 
         - 
           title: "Tasks 5"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task5.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task5.html"
       materials: 
         - 
           title: "Video 5"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-05.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-05.ogg"
           material: "5406f7238cc21c5423e1beca"
           annotations: !include ./annotations/en/movie5.yml
     - 
@@ -79,10 +79,10 @@
       tasks: 
         - 
           title: "Tasks 6"
-          url: "http://devmeetings.github.io/devmeeting-angular/en_task6.html"
+          url: "https://devmeetings.github.io/devmeeting-angular/en_task6.html"
       materials: 
         - 
           title: "Video 6"
-          url: "http://devmeetings.github.io/devmeeting-angular/sounds/angular-total-06.ogg"
+          url: "https://devmeetings.github.io/devmeeting-angular/sounds/angular-total-06.ogg"
           material: "5406f7388cc21c5423e1becd"
           annotations: !include ./annotations/en/movie6.yml
