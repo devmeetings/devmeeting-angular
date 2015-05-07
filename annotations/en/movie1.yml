@@ -2,11 +2,11 @@
   annotations: 
     - 
       timestamp: 11
-      description: "Let's start with an empty HTML page."
+      description: "We are starting with an empty HTML page."
       type: "comment"
     - 
       timestamp: 21
-      description: "Now let's include AngularJS"
+      description: "Now we will include AngularJS script"
       type: "comment"
     - 
       title: "Others: Google CDN"
@@ -15,12 +15,12 @@
       type: "snippet"
     - 
       timestamp: 41
-      description: "Now we have to tell that HTML should be parsed by AngularJS"
+      description: "We need to tell AngularJS to look for angular application within HTML page"
       type: "comment"
     - 
       timestamp: 42
       title: "ngApp"
-      description: "Let's add `ng-app`"
+      description: "We are doing that by adding `ng-app` attribute"
       meta: "exists('html[ng-app]')"
       type: "task"
     - 
@@ -34,7 +34,7 @@
       type: "snippet"
     - 
       timestamp: 64.4
-      description: "Introducing some dynamic content"
+      description: "We can introduce some dynamic content"
       type: "comment"
     - 
       title: "Angular: Expressions"
@@ -47,9 +47,9 @@
       description: "Create `expression` inside `h3`, that will concatenate two strings"
       meta: "exists('h3.ng-binding')"
       type: "task"
-    - 
+    -
       timestamp: 94.8
-      description: "We can also display dynamic content in other way"
+      description: "We can also display dynamic content in a different way by using `ngBind`"
       type: "comment"
     - 
       title: "Angular: ngBind"
@@ -58,20 +58,20 @@
       type: "snippet"
     - 
       timestamp: 144
-      description: ""
+      description: "To display dynamic content from script we need to add a `controller`"
       type: "comment"
     - 
       timestamp: 153
-      description: "Angular is passing the `$scope`"
+      description: "AngularJS is passing the `$scope` into the controller which is the link between javascript and html"
       type: "comment"
     - 
       timestamp: 176
-      description: "We have exported the variable."
+      description: "We can now export the variable."
       type: "comment"
     - 
       timestamp: 185
       title: "ngController"
-      description: "Let's add attribute `ng-controller` with value `MyFirstCtrl`"
+      description: "We need to add our controller to HTML by using `ng-controller` directive and `MyFirstCtrl` as value"
       meta: "exists('.container[ng-controller=MyFirstCtrl]')"
       type: "task"
     - 
@@ -80,11 +80,11 @@
       type: "comment"
     - 
       timestamp: 212
-      description: "We can try to change the text to exported variable."
+      description: "We can change expression to use exported variable."
       type: "comment"
     - 
       timestamp: 214
-      description: "We forgot about something...!"
+      description: "To make it all work together we need to include `main.js` in our HTML"
       type: "comment"
     - 
       title: "Angular: ngController"
@@ -111,7 +111,7 @@
       type: "comment"
     - 
       timestamp: 264
-      description: "How to bind HTML?"
+      description: "How to bind HTML to exported variable?"
       type: "comment"
     - 
       timestamp: 268
@@ -128,7 +128,7 @@
       type: "snippet"
     - 
       timestamp: 302
-      description: "Let's display todo list!"
+      description: "We can create a todo list!"
       type: "comment"
     - 
       timestamp: 306
@@ -136,11 +136,11 @@
       type: "comment"
     - 
       timestamp: 310
-      description: "We would like to export list element from JS world. **How can we achieve that?**"
+      description: "We would like to export a list element from JS world. **How can we achieve that?**"
       type: "comment"
     - 
       timestamp: 317
-      description: "Inside the controller we've created `todo` object. Let's add `name`."
+      description: "Inside the controller we have created `todo` object. Let's add `name`."
       type: "comment"
     - 
       timestamp: 327.5
@@ -156,7 +156,7 @@
       type: "comment"
     - 
       timestamp: 347.9
-      description: "We can try to display this object. **Any ideas?**"
+      description: "We will display the `todo` object. **Any ideas how?**"
       type: "comment"
     - 
       timestamp: 355
@@ -175,7 +175,7 @@
       type: "snippet"
     - 
       timestamp: 381
-      description: "And inside Bootstrap's `label` we can display **product price**"
+      description: "Inside Bootstrap's `label` we can display **product price**"
       type: "comment"
     - 
       timestamp: 390
@@ -189,7 +189,7 @@
       type: "comment"
     - 
       timestamp: 432
-      description: "Obviously todo list have to be an array, not an object. Let's create it."
+      description: "Todo list should be an array, not an object. Let's create it."
       type: "comment"
     - 
       timestamp: 435
@@ -197,7 +197,7 @@
       type: "comment"
     - 
       timestamp: 439
-      description: "We can now move first todo."
+      description: "We will move the first todo into our `todos` list."
       type: "comment"
     - 
       timestamp: 441.5
@@ -209,7 +209,7 @@
       type: "comment"
     - 
       timestamp: 450.5
-      description: "Let's add another stuff to do."
+      description: "Let's add more `todos`."
       type: "comment"
     - 
       timestamp: 456.4
@@ -217,7 +217,7 @@
       type: "comment"
     - 
       timestamp: 464.5
-      description: "We can add `completed` property now."
+      description: "We can add `completed` property."
       type: "comment"
     - 
       timestamp: 469.4
@@ -225,7 +225,7 @@
       type: "comment"
     - 
       timestamp: 472.6
-      description: "Let's create more todos."
+      description: "Let's create one more todo."
       type: "comment"
     - 
       timestamp: 481.9
@@ -243,7 +243,7 @@
       type: "task"
     - 
       timestamp: 503.6
-      description: "For each `todo` ..."
+      description: "We will use `ngRepeat` directive. For each `todo` ..."
       type: "comment"
     - 
       timestamp: 510.3
@@ -264,11 +264,11 @@
       type: "comment"
     - 
       timestamp: 531.2
-      description: "We can now display if task is finished or not. Let's try to use `checkbox`."
+      description: "We will use `checkbox` to display if task was finished or not."
       type: "comment"
     - 
       timestamp: 537.9
-      description: "We now have to bind our variable from JS to HTML"
+      description: "We have to bind `completed` variable with HTML"
       type: "comment"
     - 
       timestamp: 549.9
@@ -276,19 +276,19 @@
       type: "comment"
     - 
       timestamp: 552.5
-      description: "We've added `completed` for third todo."
+      description: "We have added `completed` for third todo."
       type: "comment"
     - 
       timestamp: 556.2
-      description: "We have to connect this to the checkbox..."
+      description: "We will connect todo's completion status to the checkbox..."
       type: "comment"
     - 
       timestamp: 573.4
-      description: "First way: we can use `checked` attribute."
+      description: "First will try to use `checked` attribute."
       type: "comment"
     - 
       timestamp: 582.5
-      description: "We've typed `false` - it didn't worked. **Why?**"
+      description: "We have set the attribute to `false` - it didn't worked. **Why?**"
       type: "comment"
     - 
       timestamp: 583.5
@@ -298,7 +298,7 @@
       type: "task"
     - 
       timestamp: 592
-      description: "Let's bind this properly using `ng-model`"
+      description: "Let's try to bind this properly using `ng-model`"
       type: "comment"
     - 
       title: "Angular: ngModel"
@@ -307,11 +307,11 @@
       type: "snippet"
     - 
       timestamp: 608.2
-      description: "We bound checkbox with `todo.completed`. **Does it work**?"
+      description: "We have bound checkbox with `todo.completed`. **Does it work**?"
       type: "comment"
     - 
       timestamp: 618.2
-      description: "Now let's try to display what is inside `todos` array"
+      description: "Now let's try to display entire `todos` array"
       type: "comment"
     - 
       timestamp: 625.5
@@ -323,7 +323,7 @@
       type: "comment"
     - 
       timestamp: 640.5
-      description: "We format price using the `currency` filter"
+      description: "We can use the `currency` filter to format price in our todo list"
       type: "comment"
     - 
       title: "Angular: Filters"
@@ -346,16 +346,16 @@
       type: "snippet"
     - 
       timestamp: 672.2
-      description: "**Working?** We can now see what is the internal state of our application."
+      description: "**Does it work?** Awesome! We can now see how the internal state of our application changes."
       type: "comment"
     - 
       title: "Others: Two-way Binding"
-      description: "You can click the checkboxes and notice differences in JSON"
+      description: "Try to click the checkboxes and notice how todo's JSON changes"
       timestamp: 680
       type: "snippet"
     - 
       timestamp: 682.1
-      description: "Let's click the checkboxes. Because we used `ng-model` the values are changing. This is called **two-way binding**."
+      description: "Let's click the checkboxes. The values are changing because we use `ng-model` for data binding. This is called **two-way binding**."
       type: "comment"
     - 
       timestamp: 683.1
@@ -363,7 +363,7 @@
       type: "comment"
     - 
       timestamp: 700
-      description: "Let's try to change the name to **input**."
+      description: "Let's create a text **input** and bind the name property to it."
       type: "comment"
     - 
       timestamp: 708.2
@@ -379,7 +379,7 @@
       type: "comment"
     - 
       title: "Others: Two-way Binding"
-      description: "Try changing the name of any todo and watch changes in model."
+      description: "Try changing the name of any todo and notice how model changes."
       timestamp: 724
       type: "snippet"
     - 
@@ -408,7 +408,7 @@
       type: "task"
     - 
       timestamp: 767.3
-      description: "We can pull it right"
+      description: "We can add `pull-right` class to align it better"
       type: "comment"
     - 
       timestamp: 769.9
@@ -422,7 +422,7 @@
       type: "task"
     - 
       timestamp: 784.5
-      description: "What we would like to have is: In edit mode we want to see input, but otherwise we want only text."
+      description: "We would like to see the input only in edit mode. Otherwise only the name should be displayed."
       type: "comment"
     - 
       timestamp: 797.8
@@ -430,7 +430,7 @@
       type: "comment"
     - 
       timestamp: 807.6
-      description: "Adding `ng-show`. When do we want to show it? **Any ideas**?"
+      description: "We are adding `ng-show` directive. What should be the value of `ng-show` **Any ideas**?"
       type: "comment"
     - 
       title: "Angular: ngShow"
@@ -439,11 +439,11 @@
       type: "snippet"
     - 
       timestamp: 815.6
-      description: "Let's add variable `isEditMode`"
+      description: "Let's set `ngShow` to use `isEditMode` variable"
       type: "comment"
     - 
       timestamp: 821.1
-      description: "In edit mode we want to **hide** the text. This is why we use `ng-hide`. But we want to show the input box - `ng-show`."
+      description: "In edit mode we want to **hide** the text. Therefore here we use `ng-hide`. At the same time we use `ng-show` for the input."
       type: "comment"
     - 
       timestamp: 825
@@ -453,7 +453,7 @@
       type: "task"
     - 
       timestamp: 828.6
-      description: "Using the buttons we want to toggle the state of `isEditMode` variable."
+      description: "We will use buttons to toggle the `isEditMode` variable."
       type: "comment"
     - 
       timestamp: 845.7
@@ -466,7 +466,7 @@
       type: "snippet"
     - 
       timestamp: 855.4
-      description: "Let's test it!"
+      description: "We have used `ngClick` directive to bind the click event to the buttons. Let's test it!"
       type: "comment"
     - 
       timestamp: 874
@@ -476,7 +476,7 @@
       type: "task"
     - 
       timestamp: 885
-      description: "Let's add **sorting** of todos."
+      description: "Let's add **sorting** to todos list."
       type: "comment"
     - 
       timestamp: 886
@@ -521,7 +521,7 @@
       type: "comment"
     - 
       timestamp: 957.8
-      description: "In model we add a field that will store the state of sorting."
+      description: "In the model we are adding a field which will store the type of sorting."
       type: "comment"
     - 
       timestamp: 963.4
@@ -533,11 +533,11 @@
       type: "comment"
     - 
       timestamp: 973.9
-      description: "By default we will be sorting by **price**"
+      description: "By default we will sort the todo list by **price**"
       type: "comment"
     - 
       timestamp: 979.1
-      description: "Type of sorting - if it should be **descending** or **ascending.**"
+      description: "Let's add a property which will define sorting order: **descending** or **ascending.**"
       type: "comment"
     - 
       timestamp: 990
@@ -561,7 +561,7 @@
       type: "comment"
     - 
       title: "Others: Sorting"
-      description: "Check if sorting is working by clicking on buttons `Price` and `Name`"
+      description: "Check if sorting works by clicking the buttons `Price` and `Name`"
       timestamp: 1036
       type: "snippet"
     - 
@@ -578,7 +578,7 @@
       type: "comment"
     - 
       title: "Others: Sortowanie"
-      description: "Check that property `sorting.desc` is also changing inside the model."
+      description: "Check if property `sorting.desc` is also changes inside the model."
       timestamp: 1066
       type: "snippet"
     - 
@@ -587,11 +587,11 @@
       timestamp: 1121
       type: "snippet"
     - 
-      description: "Let's export sorting logic to a JS function"
+      description: "Let's move the sorting logic to a javascript function in controller"
       timestamp: 1078.7
       type: "comment"
     - 
-      description: "We can write the definition of `sortBy` function."
+      description: "We can write a definition of `sortBy` function."
       timestamp: 1098.4
       type: "comment"
     - 
@@ -599,7 +599,7 @@
       timestamp: 1113.2
       type: "comment"
     - 
-      description: "To export the function we have to use `$scope`."
+      description: "To export the function we need to use `$scope`."
       timestamp: 1115.7
       type: "comment"
     - 
@@ -611,7 +611,7 @@
       timestamp: 1171.7
       type: "comment"
     - 
-      description: "Let's check if sorting buttons are working."
+      description: "Let's check if the sorting buttons are working correctly."
       timestamp: 1179.2
       type: "comment"
     - 

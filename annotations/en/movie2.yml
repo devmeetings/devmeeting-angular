@@ -2,24 +2,24 @@
   annotations: 
     - 
       timestamp: 5
-      description: "The sorting is working, but we don't know which one is active. **What could we try to do**?"
+      description: "The sorting works, but we don't know which type of sorting is currently active. **What can we do**?"
       type: "comment"
     - 
       timestamp: 6
-      description: "Let's mark active sorting button."
+      description: "Let's mark the active sorting button."
       type: "comment"
     - 
       title: "Bootstrap: Button state"
-      description: "Class `active` allows you to display the button as active.\n\n[Docs for `button.active](http://getbootstrap.com/css/#buttons-active)"
+      description: "The `active` class allows you to display the button as active.\n\n[Docs for `button.active](http://getbootstrap.com/css/#buttons-active)"
       timestamp: 22
       type: "snippet"
     - 
       timestamp: 22.8
-      description: "We've used `active` class from Bootstrap"
+      description: "We have used the `active` class from Bootstrap"
       type: "comment"
     - 
       timestamp: 28.9
-      description: "... or `btn-success`"
+      description: "We can try the `btn-success` class"
       type: "comment"
     - 
       timestamp: 33
@@ -29,7 +29,7 @@
       type: "task"
     - 
       timestamp: 40.1
-      description: "Now back to `active`."
+      description: "Let's keep `active` for now."
       type: "comment"
     - 
       timestamp: 49.3
@@ -42,7 +42,7 @@
       type: "snippet"
     - 
       timestamp: 57.3
-      description: "`ng-class` let's us insert the class conditionally"
+      description: "The `ng-class` directive lets us add the class conditionally"
       type: "comment"
     - 
       timestamp: 66.8
@@ -60,15 +60,15 @@
       type: "task"
     - 
       timestamp: 87.6
-      description: "Let's check if it's working?"
+      description: "Let's check if it works?"
       type: "comment"
     - 
       timestamp: 92.6
-      description: "We removed `active`"
+      description: "We have removed `active` class"
       type: "comment"
     - 
       timestamp: 94.6
-      description: "We can make the same thing with **Name** button. **How?**"
+      description: "We can do the same thing with the **Name** button. **How?**"
       type: "comment"
     - 
       timestamp: 96.1
@@ -80,7 +80,7 @@
       type: "comment"
     - 
       timestamp: 100.6
-      description: "We can **add icons** to display if sorting is ascending or descending."
+      description: "We can **add icons** to indicate if sorting is ascending or descending."
       type: "comment"
     - 
       title: "Inne: Sortowanie"
@@ -97,7 +97,7 @@
       type: "comment"
     - 
       timestamp: 131.6
-      description: "Second icon added - **working**?"
+      description: "Second icon added - **does it work**?"
       type: "comment"
     - 
       title: "Bootstrap: Icons"
@@ -106,7 +106,7 @@
       type: "snippet"
     - 
       timestamp: 138
-      description: "We have to display icons conditionally - **do you know how**?"
+      description: "We will display icons conditionally - **do you know how**?"
       type: "comment"
     - 
       title: "Angular: ngShow"
@@ -115,11 +115,11 @@
       type: "snippet"
     - 
       timestamp: 158.8
-      description: "Descending sorting - **working**? How to do the same thing for ascending sorting?"
+      description: "Descending sorting - **works**? How to do the same for ascending sorting?"
       type: "comment"
     - 
       timestamp: 163.3
-      description: "Done! Let's try it... But what happens if we switch to **Name**? Icons at **Price** are still displayed. **What could we do about that**?"
+      description: "Done! Let's try it... What happens if we switch to **Name**? **Price** icons are still displayed. **What can we do about it**?"
       type: "comment"
     - 
       timestamp: 203.3
@@ -136,7 +136,7 @@
       type: "snippet"
     - 
       timestamp: 225.8
-      description: "Let's make it similar for **Name**."
+      description: "Let's do the same for the **Name** button."
       type: "comment"
     - 
       timestamp: 226.3
@@ -172,7 +172,7 @@
       type: "comment"
     - 
       timestamp: 280.8
-      description: "We have now the input. We can give it proper Bootstrap class."
+      description: "We have now the input. We can assign a proper Bootstrap class to it."
       type: "comment"
     - 
       title: "Bootstrap: form-control"
@@ -219,7 +219,7 @@
       type: "comment"
     - 
       timestamp: 319.8
-      description: "Let's insert searching icon. **How?**"
+      description: "Let's insert search icon. **How?**"
       type: "comment"
     - 
       timestamp: 329
@@ -233,7 +233,7 @@
       type: "comment"
     - 
       timestamp: 337.5
-      description: "Does it work? Now we would like to bind input with our model. **Do you remember how**?"
+      description: "Does it work? Now we would like to bind input with the model. **Do you remember how**?"
       type: "comment"
     - 
       timestamp: 343.8
@@ -258,7 +258,7 @@
       type: "snippet"
     - 
       timestamp: 380
-      description: "`orderBy` allows you to sort the array, we can try to use filter named `filter`."
+      description: "`orderBy` allows you to sort the array, we will use filter named `filtering`."
       type: "comment"
     - 
       timestamp: 384.9
