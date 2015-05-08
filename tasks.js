@@ -1,4 +1,4 @@
-(function() {
+// (function() {
   var currentTask = 0;
   var currentRanking = {
     0: true
@@ -78,7 +78,9 @@
         currentTask: currentTask,
         isDone: isDone
       };
-      currentRanking[currentTask] = isDone;
+      currentRanking[currentTask] = {
+        isDone: isDone
+      };
       createEmbedNavigation();
       window.parent.postMessage(JSON.stringify(msg), url);
     };
