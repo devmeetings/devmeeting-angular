@@ -141,9 +141,13 @@
     $btnDone.innerHTML = 'Done';
 
     $btnDone.addEventListener('click', function() {
+      var isDone = !currentRanking[currentTask];
       try {
-        sendDone(currentTask, !currentRanking[currentTask]);
+        sendDone(currentTask, isDone);
       } catch (e) {}
+      if (!isDone) {
+        return;
+      }
       changeTask(currentTask + 1);
     });
 
