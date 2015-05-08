@@ -1,4 +1,4 @@
-// (function() {
+(function() {
   var currentTask = 0;
   var currentRanking = {
     0: true
@@ -143,7 +143,7 @@
     $btnDone.innerHTML = 'Done';
 
     $btnDone.addEventListener('click', function() {
-      var isDone = !currentRanking[currentTask];
+      var isDone = currentRanking[currentTask] ? currentRanking[currentTask].isDone : true;
       try {
         sendDone(currentTask, isDone);
       } catch (e) {}
