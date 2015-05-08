@@ -30,14 +30,65 @@ body {
   display: block;
 }
 
-.nav-next, .nav-prev {
+.nav-done, .nav-new-window {
   margin: 5px 0 10px;
+  position: relative;
+  z-index: 2;
 }
-.nav-next {
+.nav-done {
   float: right;
   border-radius: 0;
+  background-color: #288e37;
+  border-color: #288e67;
 }
-.nav-prev {
+.nav-done.nav-done-muted {
+  background-color: #444;
+  border-color: #444;
+}
+.nav-new-window {
   float: left;
   color: #eee;
+}
+.tasks-nav {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.tasks-nav-item {
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #666;
+  margin: 2px 3px;
+}
+.tasks-nav-item.active {
+  background-color: #444;
+}
+.tasks-nav-item.active.done {
+  background-color: #555;
+}
+.tasks-nav-item.active a {
+  color: #fff;
+  font-weight: bold;
+}
+.tasks-nav-item.done {
+  border-color: #288e37;
+}
+.tasks-nav-item.done a {
+  color: #fffd00;
+}
+.tasks-nav-item a {
+  padding: 5px;
+  color: #aaa;
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 25px;
+}
+.tasks-nav-item a:hover {
+  text-decoration: none;
+  opacity: 1.0;
 }
