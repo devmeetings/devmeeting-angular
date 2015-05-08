@@ -30,13 +30,18 @@ body {
   display: block;
 }
 
+.container {
+  position: relative;
+  padding-top: 40px;
+}
 .nav-done, .nav-new-window {
   margin: 5px 0 10px;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 .nav-done {
-  float: right;
+  bottom: -50px;
+  right: 0;
   border-radius: 0;
   background-color: #288e37;
   border-color: #288e67;
@@ -46,6 +51,8 @@ body {
   border-color: #444;
 }
 .nav-new-window {
+  top: 5px;
+  right: 10px;
   float: right;
   color: #eee;
 }

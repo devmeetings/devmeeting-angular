@@ -34,10 +34,10 @@
     var navDone = $('.nav-done');
     if (navDone) {
       if (currentRanking[newTask]) {
-        navDone.innerHTML = 'Not Done';
+        navDone.innerHTML = 'Mark As Not Done';
         navDone.classList.add('nav-done-muted');
       } else {
-        navDone.innerHTML = 'Done';
+        navDone.innerHTML = 'Mark As Done';
         navDone.classList.remove('nav-done-muted');
       }
     }
