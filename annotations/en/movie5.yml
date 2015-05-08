@@ -85,7 +85,7 @@
       type: "comment"
     - 
       timestamp: 145
-      title: "Angular: DI: Alternatywa"
+      title: "Angular: DI: Alternative"
       description: "As an alternative we can add property `$inject` to the function. Details can be found in [docs for DI](https://docs.angularjs.org/guide/di)."
       type: "snippet"
     - 
@@ -168,7 +168,7 @@
       type: "comment"
     - 
       timestamp: 273.5
-      description: "A little tiding with the labels."
+      description: "Tiding up the labels a little."
       type: "comment"
     - 
       timestamp: 274.5
@@ -239,7 +239,7 @@
       type: "comment"
     - 
       timestamp: 449.5
-      description: "We return object, that will represent our service."
+      description: "We an return object, that will represent our service."
       type: "comment"
     - 
       timestamp: 454
@@ -295,12 +295,12 @@
       type: "comment"
     - 
       timestamp: 540.3
-      description: "Our service will use `$http` services. So we need to inject it."
+      description: "Our service will use `$http` service. So we need to inject it."
       type: "comment"
     - 
       timestamp: 543
       title: "Angular: Serices"
-      description: "In practive controllers have tendency to grow very large into huge functions.\n\nIt's very important to identify things that are worth closing into a service. We can also try to make restrictions about architecture of our application: For instance - ban for using `$http` directly in controllers or directives."
+      description: "In practice controllers have tendency to grow very large into huge functions.\n\nIt's very important to identify things that are worth closing into a service. We can also try to make restrictions about architecture of our application: For instance - ban for using `$http` directly in controllers or directives."
       type: "snippet"
     - 
       timestamp: 557.3

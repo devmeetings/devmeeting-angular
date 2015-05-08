@@ -15,7 +15,7 @@
       type: "comment"
     - 
       timestamp: 16
-      description: "... and label ..."
+      description: "... and a label ..."
       type: "comment"
     - 
       timestamp: 22
@@ -27,7 +27,7 @@
       type: "comment"
     - 
       timestamp: 31
-      title: "Klasa `control-label`"
+      title: "Class `control-label`"
       description: "Fix class of `label` element to `control-label`"
       meta: "exists('label.control-label')"
       type: "task"
@@ -58,7 +58,7 @@
     - 
       timestamp: 56
       type: "snippet"
-      description: "To create forms you can also use `form-horizontal`, which displays labels next to form fields.\n\nDon't forget about `for` attribute in `label` elements. It will link a label with the input field."
+      description: "To create forms you can also use `form-horizontal` class to display labels next to form fields.\n\nDon't forget about `for` attribute in `label` elements. It will link a label with the input field."
       title: "Bootstrap: Forms: Form-horizontal"
     - 
       timestamp: 65.5
@@ -78,7 +78,7 @@
       type: "comment"
     - 
       timestamp: 75.5
-      description: "We also need a **button** to add items."
+      description: "We also need a **button** to add items (submit the form)."
       type: "comment"
     - 
       timestamp: 81.5
@@ -90,11 +90,11 @@
       type: "comment"
     - 
       timestamp: 93.5
-      description: "Dodajmy ikonkę..."
+      description: "We are adding icon..."
       type: "comment"
     - 
       timestamp: 102
-      description: "Let's try to **handle the form** and add a **validation**. Let's start with binding the form with our JS code."
+      description: "Let's bind the form with our JS code and add validation."
       type: "comment"
     - 
       timestamp: 106
@@ -121,7 +121,7 @@
     - 
       timestamp: 180
       type: "snippet"
-      description: "All [`Expressions`](https://docs.angularjs.org/guide/expression) in AngularJS are \"forgiving\". Using unexisting variables, objects or functions will not cause any errors.\n\nYou should conside this especially when creating your own filters, which should not throw errors either."
+      description: "All [`Expressions`](https://docs.angularjs.org/guide/expression) in AngularJS are \"forgiving\" by convention. Using unexisting variables, objects or functions will not cause any errors.\n\nYou should keep this in mind especially when creating your own filters. They should not throw errors."
       title: "Angular: Expressions: Forgiving"
     - 
       timestamp: 197.3
@@ -138,7 +138,7 @@
     - 
       timestamp: 203
       type: "snippet"
-      description: "AngularJS will not create empty object for us, but it will create missing fields. If we want the form to work correctly we ust need to declare empty object."
+      description: "AngularJS will not create empty object for us, but it will create missing fields. If we want the form to work correctly we need to declare an empty object."
       title: "Others: $scope"
     - 
       timestamp: 210.8
@@ -257,7 +257,7 @@
       type: "comment"
     - 
       timestamp: 476.8
-      description: "Let's change the control color when validation is invalid. Angular gives us some **special properties**."
+      description: "Let's change the control's color when validation is invalid. Angular gives us some **special properties**."
       type: "comment"
     - 
       timestamp: 479.8
@@ -328,7 +328,7 @@
     - 
       timestamp: 649
       type: "snippet"
-      description: "[List of the possible `type` values in HTML5](https://developer.mozilla.org/pl/docs/Web/HTML/Element/Input)\n\nInteresting types:\n* `email` - e-mail address\n* `range` - numbers from some range\n* `color` - choosing the color"
+      description: "[List of the possible `type` values in HTML5](https://developer.mozilla.org/pl/docs/Web/HTML/Element/Input)\n\nInteresting types:\n* `email` - e-mail address\n* `range` - numbers in range\n* `color` - choosing a color"
       title: "Bootstrap: Forms: Types of inputs in HTML5"
     - 
       timestamp: 655.8
@@ -348,7 +348,7 @@
       type: "comment"
     - 
       timestamp: 675.8
-      description: "We can add more validation rules to our field, let's try with minimal length of the name."
+      description: "We can add more validation rules to our field, let's try minimal length of the name."
       type: "comment"
     - 
       timestamp: 687.8

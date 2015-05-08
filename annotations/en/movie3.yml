@@ -2,12 +2,12 @@
   annotations: 
     - 
       title: "Angular: Extra: Docs"
-      description: "If you checked the docs before you probably noticed the notation that we will be using right now.\n\nUsing global functions in very hard to maintain and is not recommended in any larger projects."
+      description: "If you checked the angular docs before you probably noticed the notation that we use right now is not optimal.\n\nUsing global functions in very hard to maintain and it is not recommended in any larger projects."
       timestamp: 25
       type: "snippet"
     - 
       timestamp: 25.6
-      description: "Controller is now a global function - in larger application this will cause a lot of troubles!"
+      description: "Controller is now a global function - in larger application this can cause a lot of troubles!"
       type: "comment"
     - 
       timestamp: 29.8
@@ -27,12 +27,12 @@
       type: "comment"
     - 
       title: "Angular: Modules"
-      description: "Modules allows us to split the application logicaly. Potentially module should be ready to be re-used in other project.\n\n[What is a module?](https://docs.angularjs.org/guide/module)"
+      description: "Modules allows us to split the application logicaly. Potentially module should be ready to re-use in other angular project.\n\n[What is a module?](https://docs.angularjs.org/guide/module)"
       timestamp: 43
       type: "snippet"
     - 
       timestamp: 45.9
-      description: "From the global `angular` object we can create new module ..."
+      description: "By using the global `angular` object we can create new module ..."
       type: "comment"
     - 
       timestamp: 59.1
@@ -73,7 +73,7 @@
       type: "comment"
     - 
       timestamp: 129.6
-      description: "App have stopped working. Angular doesn't know that the our base module is `TodoApp`."
+      description: "App has stopped working. Angular does not know that our base module is `TodoApp`."
       type: "comment"
     - 
       timestamp: 131
@@ -106,11 +106,11 @@
       type: "comment"
     - 
       timestamp: 206.6
-      description: "Angular allows us to create our own **tags**. They call it **directives**."
+      description: "Angular allows us to create our own custom **tags**. They are called **directives**."
       type: "comment"
     - 
       title: "Angular: Directives"
-      description: "[Docs for directives](https://docs.angularjs.org/guide/directive)\n\nTo be honest we were using internal directives for the whole time! Every `ng-*` attribute is actually a directive!\n\nDirectives are the glue between model and view."
+      description: "[Docs for directives](https://docs.angularjs.org/guide/directive)\n\nWe were using internal directives for the whole time! Every `ng-*` attribute is actually a directive!\n\nDirectives are the glue between model and view."
       timestamp: 208
       type: "snippet"
     - 
@@ -136,7 +136,7 @@
       type: "comment"
     - 
       timestamp: 233.9
-      description: "And for the label we would like to display**Price**"
+      description: "And for the label we would like to display **Price**"
       type: "comment"
     - 
       timestamp: 238.4
@@ -148,7 +148,7 @@
       type: "comment"
     - 
       timestamp: 243.6
-      description: "And `name` by analogy"
+      description: "We will do the same for the button which sorts by the `name` "
       type: "comment"
     - 
       timestamp: 243.9
@@ -168,7 +168,7 @@
       type: "comment"
     - 
       timestamp: 272.1
-      description: "camelCase!"
+      description: "we use camelCase! for directive name"
       type: "comment"
     - 
       timestamp: 279.1
@@ -218,7 +218,7 @@
       type: "comment"
     - 
       title: "Angular: Directives: scope"
-      description: "By typing `scope: {}` we have isolated directive from other parts of application.\n\nIn case we doesn't use `scope` we have access to variables that comes from the controller.\n\nIn other case directive will have it's own scope."
+      description: "By typing `scope: {}` we create isolated directive from other parts of application.\n\nIn case we don't use `scope` property, we have access to scope variables from the controller.\n\nIn other case directive will have it's own scope."
       timestamp: 315
       type: "snippet"
     - 
@@ -273,11 +273,11 @@
       type: "comment"
     - 
       timestamp: 402.4
-      description: "Let's remove the code moved to a template."
+      description: "Let's remove the code which copied to the template."
       type: "comment"
     - 
       timestamp: 403.6
-      description: "**Is it working?**"
+      description: "**Does it work?**"
       type: "comment"
     - 
       timestamp: 419.4
@@ -317,7 +317,7 @@
       type: "comment"
     - 
       title: "Angular: Directives: Binding"
-      description: "When binding attribute you can also change it's name. Check it out in [docs for directives](https://docs.angularjs.org/guide/directive) jak to zrobić.\n\n[Opis możliwych wartości do bindowania](https://umur.io/angularjs-directives-using-isolated-scope-with-attributes/)"
+      description: "When binding attribute to a directive you can also change it's name. Check it in [docs for directives](https://docs.angularjs.org/guide/directive) how to do that.\n\n[All possible binding types](https://umur.io/angularjs-directives-using-isolated-scope-with-attributes/)"
       timestamp: 519
       type: "snippet"
     - 
@@ -350,7 +350,7 @@
       type: "comment"
     - 
       title: "Others: Directives: Scope"
-      description: "Buttons are not working, because scoep is isolated and we cannot access variables from controller: `sorting.by` and `sorting.desc`."
+      description: "Buttons are not working, because scope is isolated and we cannot access variables from controller: `sorting.by` and `sorting.desc`."
       timestamp: 583
       type: "snippet"
     - 
@@ -392,7 +392,7 @@
       type: "comment"
     - 
       timestamp: 620.1
-      description: "Binding by `=` passes the reference to the variable from scope above. In this case it's our controller."
+      description: "Binding by `=` passes the reference to the variable from the parent scope. In this case it's our controller."
       type: "comment"
     - 
       title: "Others: Directives: Scope"
@@ -461,7 +461,7 @@
       type: "comment"
     - 
       timestamp: 695.9
-      description: "We can create a function called `link`, which also gets a `$scope`."
+      description: "In directive we can define special function `link`, which gets a `$scope` as first argument."
       type: "comment"
     - 
       timestamp: 696.9
@@ -489,7 +489,7 @@
       type: "comment"
     - 
       timestamp: 734.6
-      description: "... and we would like to change the things that are inside the `value`."
+      description: "... and we would like to order by property which is passed in `value` attribute."
       type: "comment"
     - 
       timestamp: 737.4
