@@ -10,9 +10,6 @@
       status: "available"
       tasks: 
         - 
-          title: "Tasks 0"
-          url: "https://devmeetings.github.io/devmeeting-angular/en_task0.html"
-        - 
           title: "Task 1"
           url: "https://devmeetings.github.io/devmeeting-angular/en_task1.html"
       materials: 
