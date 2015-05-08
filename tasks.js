@@ -141,7 +141,9 @@
     $btnDone.innerHTML = 'Done';
 
     $btnDone.addEventListener('click', function() {
-      sendDone(currentTask, !currentRanking[currentTask]);
+      try {
+        sendDone(currentTask, !currentRanking[currentTask]);
+      } catch (e) {}
       changeTask(currentTask + 1);
     });
 
