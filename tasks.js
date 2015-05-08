@@ -135,8 +135,8 @@
     var $btnNewWindow = $el('a.btn.btn-link.btn-xs.nav-new-window');
     var $firstChild = $('.container > *:first-child');
     var $container = $('.container');
-    $container.insertBefore($btnNewWindow, $firstChild);
     $container.insertBefore($btnDone, $firstChild);
+    $container.insertBefore($btnNewWindow, $firstChild);
 
     $btnDone.innerHTML = 'Done';
 

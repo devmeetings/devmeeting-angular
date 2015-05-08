@@ -46,13 +46,13 @@ body {
   border-color: #444;
 }
 .nav-new-window {
-  float: left;
+  float: right;
   color: #eee;
 }
 .tasks-nav {
   position: fixed;
-  top: 0;
-  text-align: center;
+  top: 5px;
+  text-align: left;
   left: 0;
   right: 0;
 }
