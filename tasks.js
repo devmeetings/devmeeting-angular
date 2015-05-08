@@ -113,7 +113,7 @@
     [].map.call($sections, function($s, idx) {
 
       var $li = $el('li.tasks-nav-item');
-      if (currentRanking[idx]) {
+      if (currentRanking[idx] && currentRanking[idx].isDone) {
         $li.classList.add('done');
       }
       var $item = $el('a');
