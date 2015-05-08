@@ -1,8 +1,6 @@
 (function() {
   var currentTask = 0;
-  var currentRanking = {
-    0: true
-  };
+  var currentRanking = {};
   var sendDone = function() {};
 
 
@@ -78,7 +76,7 @@
         currentTask: currentTask,
         isDone: isDone
       };
-      currentRanking[currentTask] = {
+      currentRanking[currentRanking.iterationIdx + '_' + currentTask] = {
         isDone: isDone
       };
       createEmbedNavigation();
@@ -115,7 +113,8 @@
     [].map.call($sections, function($s, idx) {
 
       var $li = $el('li.tasks-nav-item');
-      if (currentRanking[idx] && currentRanking[idx].isDone) {
+      var taskIdx = currentRanking.iterationIdx + '_' + idx;
+      if (currentRanking[taskIdx] && currentRanking[taskIdx].isDone) {
         $li.classList.add('done');
       }
       var $item = $el('a');
@@ -143,7 +142,8 @@
     $btnDone.innerHTML = 'Done';
 
     $btnDone.addEventListener('click', function() {
-      var isDone = currentRanking[currentTask] ? currentRanking[currentTask].isDone : true;
+      var taskIdx = currentRanking.iterationIdx + '_' + currentTask;
+      var isDone = currentRanking[taskIdx] ? currentRanking[taskIdx].isDone : true;
       try {
         sendDone(currentTask, isDone);
       } catch (e) {}
