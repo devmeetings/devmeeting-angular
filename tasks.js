@@ -144,7 +144,7 @@
 
     $btnDone.addEventListener('click', function() {
       var taskIdx = currentRanking.iterationIdx + '_' + currentTask;
-      var isDone = currentRanking[taskIdx] ? currentRanking[taskIdx].isDone : true;
+      var isDone = currentRanking[taskIdx] ? !currentRanking[taskIdx].isDone : true;
       try {
         sendDone(currentTask, isDone);
       } catch (e) {}
