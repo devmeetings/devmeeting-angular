@@ -80,7 +80,6 @@ body {
 }
 .tasks-nav-item.active a {
   color: #fff;
-  font-weight: bold;
 }
 .tasks-nav-item.done {
   border-color: #288e37;
@@ -93,7 +92,10 @@ body {
   color: #aaa;
   font-size: 15px;
   opacity: 0.9;
-  line-height: 25px;
+  line-height: 14px;
+  font-family: monospace;
+  display: block;
+  text-align: center;
 }
 .tasks-nav-item a:hover {
   text-decoration: none;

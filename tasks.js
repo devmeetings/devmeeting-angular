@@ -74,7 +74,8 @@
     sendDone = function(currentTask, isDone) {
       var msg = {
         currentTask: currentTask,
-        isDone: isDone
+        isDone: isDone,
+        noOfTasks: $$('sections').length
       };
       currentRanking[currentRanking.iterationIdx + '_' + currentTask] = {
         isDone: isDone
@@ -159,10 +160,23 @@
     $btnNewWindow.href = window.location.toString().replace(/\?.*/, '');
   }
 
+  function findStylesUrl() {
+    var scripts = $$('script');
+    return [].reduce.call(scripts, function(found, script) {
+      if (found) {
+        return found;
+      }
+      var src = script.getAttribute('src');
+      if (src.indexOf('tasks.js') !== -1) {
+        return src.replace('tasks.js', 'styles.css');
+      }
+    }, false) || 'styles.css';
+  }
+
   function injectStyles() {
     var styles = $el('link');
     styles.rel = 'stylesheet';
-    styles.href = 'styles.css';
+    styles.href = findStylesUrl();
     $('head').appendChild(styles);
   }
 
