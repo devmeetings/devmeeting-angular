@@ -152,7 +152,6 @@
       if (!isDone) {
         return;
       }
-      changeTask(currentTask + 1);
     });
 
     $btnNewWindow.innerHTML = '&there4;';
