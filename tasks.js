@@ -31,7 +31,7 @@
     // Fix Done button
     var navDone = $('.nav-done');
     if (navDone) {
-      if (currentRanking[newTask]) {
+      if (currentRanking[newTask] && currentRanking[newTask].isDone) {
         navDone.innerHTML = 'Mark As Not Done';
         navDone.classList.add('nav-done-muted');
       } else {
