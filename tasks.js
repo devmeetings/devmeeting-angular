@@ -75,7 +75,7 @@
       var msg = {
         currentTask: currentTask,
         isDone: isDone,
-        noOfTasks: $$('sections').length
+        noOfTasks: $$('section').length
       };
       currentRanking[currentRanking.iterationIdx + '_' + currentTask] = {
         isDone: isDone
@@ -148,6 +148,7 @@
       try {
         sendDone(currentTask, isDone);
       } catch (e) {}
+
       if (!isDone) {
         return;
       }
