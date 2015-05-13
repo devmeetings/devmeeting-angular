@@ -7,7 +7,9 @@
   injectStyles();
   // Add embed class
   if (window.location.search.indexOf('embed') > 0) {
-    createEmbedMode();
+    var match = /task=(\d+)/.exec(window.location.search);
+    var taskNo = match ? parseInt(match[1], 10) : null;
+    createEmbedMode(taskNo);
   }
 
   // Functions
@@ -19,6 +21,9 @@
     }
 
     function swapActive($els) {
+      if (!$els.length) {
+        return;
+      }
       $els[currentTask].classList.remove('active');
       $els[newTask].classList.add('active');
     }
@@ -42,8 +47,13 @@
   }
 
 
-  function createEmbedMode() {
+  function createEmbedMode(taskNo) {
     $('html').classList.add('embed');
+
+    if (taskNo !== null) {
+      changeTask(taskNo);
+      return;
+    }
     // Add navigation
     createEmbedNavigation();
     createEmbedUtils();
