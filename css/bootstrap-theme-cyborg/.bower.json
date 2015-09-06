@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap-theme-cyborg",
+  "homepage": "https://github.com/victormacae/bootstrap-theme-cyborg",
+  "authors": [
+    "victormacae <victormacae@gmail.com>"
+  ],
+  "description": "bootswatch's cyborg theme",
+  "main": "cyborg.min.css",
+  "keywords": [
+    "bootstrap",
+    "cyborg",
+    "bootswatch",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "_release": "865cecf37e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "865cecf37e671a3f7a2c0184315232e46ee58440"
+  },
+  "_source": "git://github.com/victormacae/bootstrap-theme-cyborg.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-theme-cyborg",
+  "_direct": true
+}

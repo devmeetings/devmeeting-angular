@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-theme-cyborg",
+  "version": "1.0.0",
+  "homepage": "https://github.com/victormacae/bootstrap-theme-cyborg",
+  "authors": ["victormacae <victormacae@gmail.com>"],
+  "description": "bootswatch's cyborg theme",
+  "main": "cyborg.min.css",
+  "keywords": [
+    "bootstrap",
+    "cyborg",
+    "bootswatch",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ]
+}
